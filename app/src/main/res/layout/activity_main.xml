@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+
+            >
+            <RelativeLayout
+                android:id="@+id/title_rlt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/blue" >
+
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="首页"
+                    android:textSize="16sp"
+                    android:id="@+id/tx_zbt"
+                    android:textColor="#FFF"
+                    android:layout_centerInParent="true"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+            </FrameLayout>
+
+            <View android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/line"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="#F2F2F2"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_home"
+                        style="@style/MyTextView12"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/shouyelanse"
+                        android:paddingLeft="20dp"
+                        android:gravity="center"
+                        android:paddingRight="20dp"
+                        android:text="首页"
+                        android:textColor="@color/blue" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        style="@style/MyTextView14"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/xiaoxi"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="消息"
+                        android:gravity="center"
+                        android:textColor="#808080" />
+                    <ImageView android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="28dp"
+                        android:layout_toLeftOf="@+id/tv_phone"
+
+
+                        android:id="@+id/im_xyd"
+                        android:background="@drawable/xyd2"                />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_mine"
+                        style="@style/MyTextView14"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/gongzuo"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="工作"
+                        android:gravity="center"
+                        android:textColor="@color/huisetab" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_map"
+                        style="@style/MyTextView14"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/wode"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:gravity="center"
+                        android:text="我的"
+                        android:textColor="@color/huisetab" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+   </RelativeLayout>
+</LinearLayout>
