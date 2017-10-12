@@ -37,6 +37,7 @@
             android:label="@string/title_activity_login"></activity>
         <activity android:name=".UI.LoginActivity" />
         <activity android:name=".UI.HouseInfoActivity" />
+        <activity android:name=".UI.MessageDetailActvity" />
     </application>
 
 </manifest>
