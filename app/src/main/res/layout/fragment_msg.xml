@@ -18,6 +18,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:id="@+id/scv"
             android:orientation="vertical">
 
     <RelativeLayout
@@ -155,7 +156,7 @@
             android:background="@drawable/weidu" />
 
         <TextView
-            android:id="@+id/t4"
+            android:id="@+id/t75"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -168,7 +169,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/t4"
+            android:layout_below="@+id/t75"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:layout_marginTop="5dp"
@@ -237,7 +238,7 @@
                     android:background="@drawable/weidu" />
 
                 <TextView
-                    android:id="@+id/t4"
+                    android:id="@+id/t99"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
@@ -250,7 +251,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/t4"
+                    android:layout_below="@+id/t99"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_marginTop="5dp"
@@ -278,7 +279,7 @@
                     android:background="@drawable/weidu" />
 
                 <TextView
-                    android:id="@+id/t4"
+                    android:id="@+id/t88"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
@@ -291,7 +292,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/t4"
+                    android:layout_below="@id/t88"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_marginTop="5dp"
