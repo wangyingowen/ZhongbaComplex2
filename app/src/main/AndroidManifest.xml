@@ -34,10 +34,12 @@
         <activity android:name=".UI.MainActivity" />
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
         <activity android:name=".UI.LoginActivity" />
         <activity android:name=".UI.HouseInfoActivity" />
         <activity android:name=".UI.MessageDetailActvity" />
+        <activity android:name=".UI.WattingForDoActivity" />
+        <activity android:name=".UI.EventCollectionActivity"></activity>
     </application>
 
 </manifest>
