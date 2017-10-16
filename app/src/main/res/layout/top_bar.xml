@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:background="@color/blue" >
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="-20dp"
+        android:id="@+id/im_back"
+        android:src="@drawable/returnlase" />
+
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="60.0dip"
+        android:layout_marginRight="60.0dip"
+        android:singleLine="true"
+        android:text="注册"
+        android:textColor="#ffffffff"
+        android:textSize="18.0dip" />
+
+    <TextView
+        android:id="@+id/btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:paddingRight="15.0dip"
+        android:textColor="#ffffffff"
+        android:textSize="15.0dip" />
+
+    <ImageView
+        android:id="@+id/im_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="12.0dip"
+        android:gravity="center_vertical" />
+
+</RelativeLayout>

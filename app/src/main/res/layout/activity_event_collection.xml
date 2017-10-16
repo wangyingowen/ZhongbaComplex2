@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.shibei.zb.zhongbacomplex.View.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:centerText="事件采集"></com.shibei.zb.zhongbacomplex.View.TopBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <TextView
+            style="@style/MyTextView12"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#d81e06"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/t21"
+            style="@style/MyTextView14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="事件名称:"
+            android:textColor="#333" />
+
+        <EditText
+            android:id="@+id/ed_eventname"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/t21"
+            android:background="@null"
+            android:hint="请输入事件名称"
+            android:paddingLeft="10dp"
+            android:textColor="#666"
+            android:textColorHint="#999"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/ed_eventname"
+            android:layout_marginTop="5dp"
+            android:background="@color/line"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/t41"
+            style="@style/MyTextView14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="事件等级:"
+            android:textColor="#333" />
+
+        <EditText
+            android:id="@+id/ed_eventlevel"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/t41"
+            android:background="@null"
+            android:hint="点击选择事件等级"
+            android:paddingLeft="10dp"
+            android:textColor="#666"
+            android:textColorHint="#999"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/ed_eventlevel"
+            android:layout_marginTop="5dp"
+            android:background="@color/line"></View>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/more2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/MyTextView12"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#d81e06"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/t31"
+            style="@style/MyTextView14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="事件地址:"
+            android:textColor="#333" />
+
+        <EditText
+            android:id="@+id/ed_eventaddress"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/t31"
+            android:background="@null"
+            android:hint="请输入事件地址"
+            android:paddingLeft="10dp"
+            android:textColor="#666"
+            android:textColorHint="#999"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/ed_eventaddress"
+            android:layout_marginTop="5dp"
+            android:background="@color/line"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tsbryname"
+            style="@style/MyTextView14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="    上报人:"
+            android:textColor="#333" />
+
+        <EditText
+            android:id="@+id/ed_shagnbaorenname"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/tsbryname"
+            android:background="@null"
+            android:hint="请输入上报人姓名"
+            android:paddingLeft="10dp"
+            android:textColor="#666"
+            android:textColorHint="#999"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/ed_shagnbaorenname"
+            android:layout_marginTop="5dp"
+            android:background="@color/line"></View>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tsbryteltephone"
+            style="@style/MyTextView14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="上报人电话:"
+            android:textColor="#333" />
+
+        <EditText
+            android:id="@+id/ed_shagnbaorentelephone"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/tsbryteltephone"
+            android:background="@null"
+            android:hint="请输入上报人电话"
+            android:paddingLeft="10dp"
+            android:textColor="#666"
+            android:textColorHint="#999"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/ed_shagnbaorentelephone"
+            android:layout_marginTop="5dp"
+            android:background="@color/line"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tssxz"
+            style="@style/MyTextView14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="所属乡镇:"
+            android:textColor="#333" />
+
+        <EditText
+            android:id="@+id/ed_ssxz"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/tssxz"
+            android:background="@null"
+            android:hint="点击选择所属乡镇"
+            android:paddingLeft="10dp"
+            android:textColor="#666"
+            android:textColorHint="#999"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/ed_ssxz"
+            android:layout_marginTop="5dp"
+            android:background="@color/line"></View>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/more2" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tclbm"
+            style="@style/MyTextView14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="处理部门:"
+            android:textColor="#333" />
+
+        <EditText
+            android:id="@+id/ed_eventclbm"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/tclbm"
+            android:background="@null"
+            android:hint="点击选择处理本事件的部门"
+            android:paddingLeft="10dp"
+            android:textColor="#666"
+            android:textColorHint="#999"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/ed_eventclbm"
+            android:layout_marginTop="5dp"
+            android:background="@color/line"></View>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/more2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/aw4"
+      >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请输入事件详细内容.."
+            android:textColor="#444"
+            android:textColorHint="#999"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/MyTextView14"
+        android:layout_marginLeft="15dp"
+        android:text="点击下方图标上传图片:"
+        android:textColor="#444444" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/add_pic" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/qqlv"
+        android:text="确认提交"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="1px"
+        android:layout_marginTop="15dp"></View>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

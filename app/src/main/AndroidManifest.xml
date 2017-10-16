@@ -40,6 +40,7 @@
         <activity android:name=".UI.MessageDetailActvity" />
         <activity android:name=".UI.WattingForDoActivity" />
         <activity android:name=".UI.EventCollectionActivity"></activity>
+        <activity android:name=".UI.MyTaskActvity" />
     </application>
 
 </manifest>
