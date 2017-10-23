@@ -15,7 +15,7 @@
             <RelativeLayout
                 android:id="@+id/title_rlt"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:visibility="gone"
                 android:background="@color/blue" >
 
@@ -61,11 +61,11 @@
 
                     <TextView
                         android:id="@+id/tv_home"
-                        style="@style/MyTextView12"
+                        style="@style/MyTextView14"
                         android:layout_centerInParent="true"
                         android:clickable="true"
-                        android:drawablePadding="5dp"
-                        android:drawableTop="@drawable/shouyelanse"
+                        android:drawablePadding="0dp"
+                        android:drawableTop="@mipmap/homepageblue"
                         android:paddingLeft="20dp"
                         android:gravity="center"
                         android:paddingRight="20dp"
@@ -84,22 +84,13 @@
                         style="@style/MyTextView14"
                         android:layout_centerInParent="true"
                         android:clickable="true"
-                        android:drawablePadding="5dp"
-                        android:drawableTop="@drawable/xiaoxi"
+                        android:drawablePadding="1dp"
+                        android:drawableTop="@mipmap/renwu"
                         android:paddingLeft="20dp"
                         android:paddingRight="20dp"
-                        android:text="消息"
+                        android:text="任务"
                         android:gravity="center"
                         android:textColor="#808080" />
-                    <ImageView android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginRight="28dp"
-                        android:layout_toLeftOf="@+id/tv_phone"
-
-
-                        android:id="@+id/im_xyd"
-                        android:background="@drawable/xyd2"                />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -110,15 +101,16 @@
                     <TextView
                         android:id="@+id/tv_mine"
                         style="@style/MyTextView14"
-                        android:layout_centerInParent="true"
                         android:clickable="true"
-                        android:drawablePadding="5dp"
-                        android:drawableTop="@drawable/gongzuo"
+                        android:drawablePadding="-1dp"
+                        android:drawableTop="@mipmap/searchhui"
                         android:paddingLeft="20dp"
                         android:paddingRight="20dp"
-                        android:text="工作"
+                        android:text="查询 "
                         android:gravity="center"
-                        android:textColor="@color/huisetab" />
+                        android:textColor="@color/huisetab"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
                 </RelativeLayout>
                 <RelativeLayout
                     android:layout_width="0dp"
@@ -130,8 +122,8 @@
                         style="@style/MyTextView14"
                         android:layout_centerInParent="true"
                         android:clickable="true"
-                        android:drawablePadding="5dp"
-                        android:drawableTop="@drawable/wode"
+                        android:drawablePadding="1dp"
+                        android:drawableTop="@mipmap/mine"
                         android:paddingLeft="20dp"
                         android:paddingRight="20dp"
                         android:gravity="center"

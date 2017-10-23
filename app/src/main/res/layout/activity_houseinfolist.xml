@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.shibei.zb.zhongbacomplex.View.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:centerText="房屋信息"
+        app:rightText="新增"
+        ></com.shibei.zb.zhongbacomplex.View.TopBar>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/touming"
+        android:id="@+id/lst_mytask"
+        android:divider="@null"
+        android:visibility="gone"
+        >
+
+    </ListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_nodata"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@mipmap/nodata"
+                android:id="@+id/imnodata"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+               style="@style/MyTextView14"
+                android:textColor="#ccc"
+                android:text="你还未录入任何房屋，请点击右上角新增~"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imnodata"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -195,11 +195,11 @@
                     >
 
                     <RelativeLayout
-                        android:id="@+id/rl_wdrw"
+                        android:id="@+id/rl_qiandao"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/aw4"
-                        android:layout_centerInParent="true">
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/aw4">
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -207,20 +207,20 @@
                             android:layout_centerInParent="true">
 
                             <ImageView
-                                android:id="@+id/im31"
+                                android:id="@+id/im52"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_centerHorizontal="true"
-                                android:background="@drawable/renwu"
+                                android:background="@drawable/qiandao"
 
                                 />
 
                             <TextView
                                 style="@style/MyTextView14"
-                                android:layout_below="@+id/im31"
+                                android:layout_below="@+id/im52"
                                 android:layout_centerHorizontal="true"
-                                android:text="@string/home_wdrw"
                                 android:layout_marginTop="2dp"
+                                android:text="@string/home_qiandao"
                                 android:textColor="#666" />
                         </RelativeLayout>
 
@@ -276,46 +276,7 @@
 
                 </RelativeLayout>
 
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="70dp"
-                    android:layout_weight="1"
 
-                    >
-
-                    <RelativeLayout
-                        android:id="@+id/rl_qiandao"
-                        android:layout_width="80dp"
-                        android:layout_height="70dp"
-                        android:layout_centerInParent="true"
-                        android:background="@drawable/aw4">
-
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true">
-
-                            <ImageView
-                                android:id="@+id/im52"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_centerHorizontal="true"
-                                android:background="@drawable/qiandao"
-
-                                />
-
-                            <TextView
-                                style="@style/MyTextView14"
-                                android:layout_below="@+id/im52"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="2dp"
-                                android:text="@string/home_qiandao"
-                                android:textColor="#666" />
-                        </RelativeLayout>
-
-                    </RelativeLayout>
-
-                </RelativeLayout>
 
             </LinearLayout>
 

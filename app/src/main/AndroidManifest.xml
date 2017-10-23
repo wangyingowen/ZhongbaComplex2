@@ -41,6 +41,13 @@
         <activity android:name=".UI.WattingForDoActivity" />
         <activity android:name=".UI.EventCollectionActivity"></activity>
         <activity android:name=".UI.MyTaskActvity" />
+        <activity android:name=".UI.DateUploadActivity" />
+        <activity android:name=".UI.AddDateUploadActivity" />
+        <activity android:name=".UI.SignActivity" />
+        <activity android:name=".UI.PersonnelManagementActivity" />
+        <activity android:name=".UI.CompanyInfoActivity" />
+        <activity android:name=".UI.HoseInfoListActivity" />
+        <activity android:name=".UI.PersonelMangementListActivity" />
     </application>
 
 </manifest>

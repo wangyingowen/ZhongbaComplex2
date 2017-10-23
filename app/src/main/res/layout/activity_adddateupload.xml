@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    >
+
+    <com.shibei.zb.zhongbacomplex.View.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:centerText="新增日报"
+        app:rightText="提交"
+        ></com.shibei.zb.zhongbacomplex.View.TopBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/aw4"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:id="@+id/ed_content"
+            android:background="@null"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:textColorHint="#ccc"
+            android:hint="请输入今日工作总结报告.."
+            android:gravity="top"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
