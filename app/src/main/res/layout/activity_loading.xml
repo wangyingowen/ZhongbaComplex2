@@ -11,7 +11,7 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/im1"
         android:layout_marginTop="150dp"
-        android:background="@drawable/yuanjiaologo"
+        android:background="@drawable/newlogo"
         />
     <TextView
         android:layout_width="wrap_content"

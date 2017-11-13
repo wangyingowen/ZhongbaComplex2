@@ -20,7 +20,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="95dp"
+                android:layout_height="wrap_content"
                 android:background="@color/blue">
 
 
@@ -30,7 +30,8 @@
                     android:layout_height="55dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/morentouxiang" />
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/beck" />
 
                 <TextView
                     android:id="@+id/tx_username"
@@ -81,11 +82,36 @@
                     android:text="@string/home_gxqy"
                     android:textColor="#fff" />
 
+                <View
+                   android:layout_width="1px"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/tx_bm"
+                    android:layout_marginTop="10dp"
+                    />
+
             </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_jindu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_orange">
+
+                <com.shibei.zb.zhongbacomplex.View.DashboardView3
+                    android:id="@+id/design_navigation_view"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginTop="10dp"
                 android:background="#f2f2f2">
 
                 <TextView
@@ -99,6 +125,7 @@
                     />
 
             </RelativeLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -110,6 +137,7 @@
                     android:layout_width="0dp"
                     android:layout_height="70dp"
                     android:layout_weight="1"
+                    android:visibility="visible"
 
                     >
 
@@ -117,8 +145,8 @@
                         android:id="@+id/rl_dbsx"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/aw4"
-                        android:layout_centerInParent="true">
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/aw4">
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -138,28 +166,38 @@
                                 style="@style/MyTextView14"
                                 android:layout_below="@+id/im112"
                                 android:layout_centerHorizontal="true"
-                                android:text="@string/home_dbsx"
                                 android:layout_marginTop="2dp"
+                                android:text="@string/home_dbsx"
                                 android:textColor="#666" />
                         </RelativeLayout>
 
                     </RelativeLayout>
 
+                    <Button
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@mipmap/newmsg"
+                        android:text="1"
+                        android:textColor="#FFF"
+                        android:textSize="10sp" />
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="70dp"
                     android:layout_weight="1"
+                    android:visibility="gone"
 
                     >
 
                     <RelativeLayout
-                        android:id="@+id/rl_sjcj"
+                        android:id="@+id/rl_sjcj2"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/aw4"
-                        android:layout_centerInParent="true">
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/aw4">
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -179,14 +217,15 @@
                                 style="@style/MyTextView14"
                                 android:layout_below="@+id/im223"
                                 android:layout_centerHorizontal="true"
-                                android:text="@string/home_sjcj"
                                 android:layout_marginTop="2dp"
+                                android:text="@string/home_sjcj"
                                 android:textColor="#666" />
                         </RelativeLayout>
 
                     </RelativeLayout>
 
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="70dp"
@@ -227,13 +266,6 @@
                     </RelativeLayout>
 
                 </RelativeLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:weightSum="3">
 
                 <RelativeLayout
                     android:layout_width="0dp"
@@ -246,8 +278,8 @@
                         android:id="@+id/rl_ribao"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/aw4"
-                        android:layout_centerInParent="true">
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/aw4">
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -264,11 +296,11 @@
                                 />
 
                             <TextView
-                                style="@style/MyTextView14"
+                                style="@style/MyTextView12"
                                 android:layout_below="@+id/im53"
                                 android:layout_centerHorizontal="true"
-                                android:text="@string/home_ribao"
                                 android:layout_marginTop="2dp"
+                                android:text="@string/home_ribao"
                                 android:textColor="#666" />
                         </RelativeLayout>
 
@@ -276,6 +308,15 @@
 
                 </RelativeLayout>
 
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
 
 
             </LinearLayout>
@@ -298,13 +339,6 @@
 
             </RelativeLayout>
 
-            <TextView
-                style="@style/MyTextView14"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp"
-                android:text="@string/home_jcxxgl"
-                android:textColor="#999" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -323,8 +357,8 @@
                         android:id="@+id/rl_ryxx"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/aw4"
-                        android:layout_centerInParent="true">
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/aw4">
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -344,8 +378,8 @@
                                 style="@style/MyTextView14"
                                 android:layout_below="@+id/im1"
                                 android:layout_centerHorizontal="true"
-                                android:text="@string/home_ryxx"
                                 android:layout_marginTop="2dp"
+                                android:text="@string/home_ryxx"
                                 android:textColor="#666" />
                         </RelativeLayout>
 
@@ -364,8 +398,8 @@
                         android:id="@+id/rl_fwxx"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/aw4"
-                        android:layout_centerInParent="true">
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/aw4">
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -385,14 +419,15 @@
                                 style="@style/MyTextView14"
                                 android:layout_below="@+id/im2"
                                 android:layout_centerHorizontal="true"
-                                android:text="@string/home_fwxx"
                                 android:layout_marginTop="2dp"
+                                android:text="@string/home_fwxx"
                                 android:textColor="#666" />
                         </RelativeLayout>
 
                     </RelativeLayout>
 
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="70dp"
@@ -404,8 +439,8 @@
                         android:id="@+id/rl_dwxx"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/aw4"
-                        android:layout_centerInParent="true">
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/aw4">
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -425,8 +460,8 @@
                                 style="@style/MyTextView14"
                                 android:layout_below="@+id/im3"
                                 android:layout_centerHorizontal="true"
-                                android:text="@string/home_dwxx"
                                 android:layout_marginTop="2dp"
+                                android:text="@string/home_dwxx"
                                 android:textColor="#666" />
                         </RelativeLayout>
 
@@ -434,6 +469,7 @@
 
                 </RelativeLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -452,8 +488,8 @@
                         android:id="@+id/rl_zzxx"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/aw4"
-                        android:layout_centerInParent="true">
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/aw4">
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -470,11 +506,53 @@
                                 />
 
                             <TextView
-                                style="@style/MyTextView14"
+                                style="@style/MyTextView12"
                                 android:layout_below="@+id/im51"
                                 android:layout_centerHorizontal="true"
-                                android:text="@string/home_zzxx"
                                 android:layout_marginTop="2dp"
+                                android:text="@string/home_zzxx"
+                                android:textColor="#666" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_jiayouzhan"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/aw4">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/im73"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@mipmap/jiayouzhan4"
+
+                                />
+
+                            <TextView
+                                style="@style/MyTextView14"
+                                android:layout_below="@+id/im73"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:text="加油站"
                                 android:textColor="#666" />
                         </RelativeLayout>
 
@@ -490,7 +568,7 @@
                     >
 
                     <RelativeLayout
-                        android:id="@+id/rl_cheliang"
+                        android:id="@+id/rl_sjcj"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
                         android:layout_centerInParent="true"
@@ -502,34 +580,163 @@
                             android:layout_centerInParent="true">
 
                             <ImageView
-                                android:id="@+id/im5"
+                                android:id="@+id/im713"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_centerHorizontal="true"
-                                android:background="@drawable/cheliang"
+                                android:background="@drawable/shijiancaiji"
 
                                 />
 
                             <TextView
                                 style="@style/MyTextView14"
-                                android:layout_below="@+id/im5"
+                                android:layout_below="@+id/im713"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="2dp"
-                                android:layout_marginLeft="10dp"
-                                android:gravity="center"
-                                android:layout_marginRight="10dp"
-                                android:text="@string/home_cljqcy"
+                                android:text="事件采集"
                                 android:textColor="#666" />
-
                         </RelativeLayout>
 
                     </RelativeLayout>
 
                 </RelativeLayout>
 
+
             </LinearLayout>
 
-            <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_school"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/aw4">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/im81"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@mipmap/school"
+
+                                />
+
+                            <TextView
+                                style="@style/MyTextView12"
+                                android:layout_below="@+id/im81"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:text="学校"
+                                android:textColor="#666" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_police"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/aw4">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/im93"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@mipmap/police"
+
+                                />
+
+                            <TextView
+                                style="@style/MyTextView14"
+                                android:layout_below="@+id/im93"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:text="警务室"
+                                android:textColor="#666" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_jianchazhan"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/aw4">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/im913"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@mipmap/jianchazhan"
+
+                                />
+
+                            <TextView
+                                style="@style/MyTextView14"
+                                android:layout_below="@+id/im913"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:text="检查站"
+                                android:textColor="#666" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- <TextView
                 style="@style/MyTextView14"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
@@ -554,8 +761,8 @@
                         android:id="@+id/rl_sjlr"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/aw4"
-                        android:layout_centerInParent="true">
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/aw4">
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -575,8 +782,8 @@
                                 style="@style/MyTextView14"
                                 android:layout_below="@+id/im5123"
                                 android:layout_centerHorizontal="true"
-                                android:text="@string/home_sjlr"
                                 android:layout_marginTop="2dp"
+                                android:text="@string/home_sjlr"
                                 android:textColor="#666" />
                         </RelativeLayout>
 
@@ -616,10 +823,10 @@
                                 style="@style/MyTextView14"
                                 android:layout_below="@+id/im55"
                                 android:layout_centerHorizontal="true"
-                                android:layout_marginTop="2dp"
                                 android:layout_marginLeft="10dp"
-                                android:gravity="center"
                                 android:layout_marginRight="10dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center"
                                 android:text="@string/home_jrgz"
                                 android:textColor="#666" />
                         </RelativeLayout>
@@ -627,6 +834,7 @@
                     </RelativeLayout>
 
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="70dp"
@@ -659,10 +867,10 @@
                                 style="@style/MyTextView14"
                                 android:layout_below="@+id/im552"
                                 android:layout_centerHorizontal="true"
-                                android:layout_marginTop="2dp"
                                 android:layout_marginLeft="10dp"
-                                android:gravity="center"
                                 android:layout_marginRight="10dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center"
                                 android:text="@string/home_sysj"
                                 android:textColor="#666" />
                         </RelativeLayout>
@@ -672,6 +880,7 @@
                 </RelativeLayout>
 
             </LinearLayout>
+
             <TextView
                 style="@style/MyTextView14"
                 android:layout_marginLeft="10dp"
@@ -697,8 +906,8 @@
                         android:id="@+id/rl_wdrw2"
                         android:layout_width="80dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/aw4"
-                        android:layout_centerInParent="true">
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/aw4">
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -718,8 +927,8 @@
                                 style="@style/MyTextView14"
                                 android:layout_below="@+id/im51231"
                                 android:layout_centerHorizontal="true"
-                                android:text="@string/home_wdrw"
                                 android:layout_marginTop="2dp"
+                                android:text="@string/home_wdrw"
                                 android:textColor="#666" />
                         </RelativeLayout>
 
@@ -759,10 +968,10 @@
                                 style="@style/MyTextView14"
                                 android:layout_below="@+id/im66"
                                 android:layout_centerHorizontal="true"
-                                android:layout_marginTop="2dp"
                                 android:layout_marginLeft="10dp"
-                                android:gravity="center"
                                 android:layout_marginRight="10dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center"
                                 android:text="@string/home_syrw"
                                 android:textColor="#666" />
                         </RelativeLayout>
@@ -772,14 +981,13 @@
                 </RelativeLayout>
 
 
-            </LinearLayout>
+            </LinearLayout>-->
 
             <View
                 android:layout_width="1px"
                 android:layout_height="1px"
-                android:background="#fff"
                 android:layout_marginTop="15dp"
-                ></View>
+                android:background="#fff"></View>
         </LinearLayout>
 
     </ScrollView>

@@ -2,7 +2,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_nodata"
+        >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/nodata"
+            android:id="@+id/imnodata"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            style="@style/MyTextView14"
+            android:textColor="#ccc"
+            android:text="暂无任务~"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imnodata"
+            android:layout_marginTop="10dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+    <ListView
+        android:id="@+id/lst_mytask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"></ListView>
 </LinearLayout>

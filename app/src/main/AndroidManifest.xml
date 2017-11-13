@@ -19,7 +19,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/yuanjiaologo"
+        android:icon="@drawable/newlogo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -32,9 +32,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".UI.MainActivity" />
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login" />
         <activity android:name=".UI.LoginActivity" />
         <activity android:name=".UI.HouseInfoActivity" />
         <activity android:name=".UI.MessageDetailActvity" />
@@ -48,6 +45,11 @@
         <activity android:name=".UI.CompanyInfoActivity" />
         <activity android:name=".UI.HoseInfoListActivity" />
         <activity android:name=".UI.PersonelMangementListActivity" />
+        <activity android:name=".UI.CompanyListActivity" />
+        <activity android:name=".UI.OrganizationListActivity" />
+        <activity android:name=".UI.TempleListActivity" />
+        <activity android:name=".UI.SeachActivity" />
+        <activity android:name=".UI.OrganizationInfoActivity" />
     </application>
 
 </manifest>

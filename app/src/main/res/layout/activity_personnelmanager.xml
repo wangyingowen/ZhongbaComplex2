@@ -157,7 +157,7 @@
                     android:layout_height="35dp"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="2dp"
-                    android:layout_toLeftOf="@+id/immore1"
+                    android:layout_toLeftOf="@+id/immore13"
                     android:layout_toRightOf="@+id/t_type"
                     android:background="@null"
                     android:enabled="false"
@@ -175,7 +175,7 @@
                     android:background="@color/line"></View>
 
                 <ImageView
-                    android:id="@+id/immore1"
+                    android:id="@+id/immore13"
                     android:layout_width="15dp"
                     android:layout_height="10dp"
                     android:layout_alignParentRight="true"
