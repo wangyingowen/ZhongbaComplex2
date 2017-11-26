@@ -18,6 +18,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:id="@+id/rl_root"
             android:orientation="vertical">
 
             <LinearLayout
@@ -31,6 +32,7 @@
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="20dp"
+                    android:id="@+id/im_headicon"
                     android:background="@drawable/tupianshangchuan" />
 
                 <TextView
@@ -114,8 +116,8 @@
                     android:layout_toLeftOf="@+id/immore1"
                     android:layout_toRightOf="@+id/t41"
                     android:background="@null"
-                    android:enabled="false"
-                    android:hint="男"
+                    android:editable="false"
+                    android:hint="请点击选择性别"
                     android:paddingLeft="10dp"
                     android:textColor="#666"
                     android:textColorHint="#999"
@@ -156,11 +158,10 @@
                     android:layout_width="250dp"
                     android:layout_height="35dp"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="2dp"
                     android:layout_toLeftOf="@+id/immore13"
-                    android:layout_toRightOf="@+id/t_type"
+                    android:layout_toStartOf="@+id/immore13"
                     android:background="@null"
-                    android:enabled="false"
+                    android:editable="false"
                     android:hint="点击选择人口类型"
                     android:paddingLeft="10dp"
                     android:textColor="#666"
@@ -184,6 +185,142 @@
                     android:background="@drawable/more2" />
             </RelativeLayout>
 
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/t_mr"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="婚姻状况:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_marry"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toLeftOf="@+id/immore1311"
+                    android:layout_toRightOf="@+id/t_mr"
+                    android:background="@null"
+                    android:editable="false"
+                    android:hint="点击选择婚姻状况"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_marry"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+
+                <ImageView
+                    android:id="@+id/immore1311"
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more2" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/t_sy"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="生育状况:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_shengyu"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toLeftOf="@+id/imsy"
+                    android:layout_toRightOf="@+id/t_sy"
+                    android:background="@null"
+                    android:editable="false"
+                    android:hint="点击选择生育状况"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_shengyu"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+
+                <ImageView
+                    android:id="@+id/imsy"
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more2" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/t_jk"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="健康状况:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_jiankang"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toLeftOf="@+id/imjiankang"
+                    android:layout_toRightOf="@+id/t_jk"
+                    android:background="@null"
+                    android:editable="false"
+                    android:hint="点击选择健康状况"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_jiankang"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+
+                <ImageView
+                    android:id="@+id/imjiankang"
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more2" />
+            </RelativeLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -204,7 +341,7 @@
                     android:layout_marginLeft="2dp"
                     android:layout_toRightOf="@+id/tmz"
                     android:background="@null"
-                    android:enabled="false"
+                    android:editable="false"
                     android:hint="请点击选择民族"
                     android:paddingLeft="10dp"
                     android:textColor="#666"
@@ -215,6 +352,94 @@
                     android:layout_width="match_parent"
                     android:layout_height="1px"
                     android:layout_below="@+id/ed_mingzu"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more2" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tzj"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="宗教信仰:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_zhongjiao"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/tzj"
+                    android:background="@null"
+                    android:editable="false"
+                    android:hint="请点击选择宗教信仰"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_zhongjiao"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more2" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tzjtime"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="宗教加入时间:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_zhongjiaotime"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/tzjtime"
+                    android:background="@null"
+                    android:editable="false"
+                    android:hint="请点击选择加入宗教时间"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_zhongjiaotime"
                     android:layout_marginTop="5dp"
                     android:background="@color/line"></View>
 
@@ -254,7 +479,7 @@
                     android:layout_marginLeft="2dp"
                     android:layout_toRightOf="@+id/tzzmm"
                     android:background="@null"
-                    android:enabled="false"
+                    android:editable="false"
                     android:hint="请点击选择政治面貌"
                     android:paddingLeft="10dp"
                     android:textColor="#666"
@@ -286,7 +511,7 @@
                     style="@style/MyTextView14"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:text="出生年月:"
+                    android:text="特殊特征:"
                     android:textColor="#333" />
 
                 <EditText
@@ -297,7 +522,8 @@
                     android:layout_marginLeft="2dp"
                     android:layout_toRightOf="@+id/tsbryname"
                     android:background="@null"
-                    android:hint="请录入人员出生年月"
+                    android:hint="无"
+                    android:editable="false"
                     android:paddingLeft="10dp"
                     android:textColor="#666"
                     android:textColorHint="#999"
@@ -340,8 +566,10 @@
                     android:layout_marginLeft="2dp"
                     android:layout_toRightOf="@+id/thzszd"
                     android:background="@null"
+                    android:maxLines="1"
                     android:hint="点击录入户籍所在地"
                     android:paddingLeft="10dp"
+                    android:editable="false"
                     android:textColor="#666"
                     android:textColorHint="#999"
                     android:textSize="14sp" />
@@ -362,6 +590,49 @@
                     android:background="@drawable/more2" />
             </RelativeLayout>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    style="@style/MyTextView12"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#d81e06"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/t2112"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="详细地址:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_address"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/t2112"
+                    android:background="@null"
+                    android:hint="请输入详细地址"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_address"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+            </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -385,6 +656,7 @@
                     android:background="@null"
                     android:hint="点击选择文化程度"
                     android:paddingLeft="10dp"
+                    android:editable="false"
                     android:textColor="#666"
                     android:textColorHint="#999"
                     android:textSize="14sp" />
@@ -427,6 +699,7 @@
                     android:background="@null"
                     android:hint="请输入身份证号码"
                     android:maxLength="18"
+                    android:maxLines="1"
                     android:paddingLeft="10dp"
                     android:textColor="#666"
                     android:textColorHint="#999"
@@ -461,6 +734,7 @@
                     android:layout_height="35dp"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="2dp"
+                    android:maxLines="1"
                     android:layout_toRightOf="@+id/t_telephone"
                     android:background="@null"
                     android:hint="请输入手机号"
@@ -487,6 +761,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="15dp"
+                android:id="@+id/btn_comit"
                 android:background="@drawable/qqlv"
                 android:text="确认提交"
                 android:textColor="#FFFFFF"

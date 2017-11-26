@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -19,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            android:id="@+id/v_root"
             >
 
     <RelativeLayout
@@ -70,31 +72,33 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/t41"
+            android:id="@+id/t411"
             style="@style/MyTextView14"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
-            android:text="事件等级:"
+            android:text="事件类型:"
             android:textColor="#333" />
 
         <EditText
-            android:id="@+id/ed_eventlevel"
+            android:id="@+id/ed_eventtype"
             android:layout_width="250dp"
             android:layout_height="35dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="2dp"
-            android:layout_toRightOf="@+id/t41"
+            android:layout_toRightOf="@+id/t411"
             android:background="@null"
-            android:hint="点击选择事件等级"
+            android:editable="false"
+            android:hint="点击选择事件类型"
             android:paddingLeft="10dp"
             android:textColor="#666"
             android:textColorHint="#999"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="Deprecated" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:layout_below="@+id/ed_eventlevel"
+            android:layout_below="@+id/ed_eventtype"
             android:layout_marginTop="5dp"
             android:background="@color/line"></View>
 
@@ -106,7 +110,48 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/more2" />
     </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
+                <TextView
+                    android:id="@+id/t41"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="事件等级:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_eventlevel"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/t41"
+                    android:background="@null"
+                    android:hint="点击选择事件等级"
+                    android:paddingLeft="10dp"
+                    android:editable="false"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_eventlevel"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more2" />
+            </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -134,7 +179,8 @@
             android:layout_marginLeft="2dp"
             android:layout_toRightOf="@+id/t31"
             android:background="@null"
-            android:hint="请输入事件地址"
+            android:hint="请输入详细地址"
+
             android:paddingLeft="10dp"
             android:textColor="#666"
             android:textColorHint="#999"
@@ -146,6 +192,7 @@
             android:layout_below="@+id/ed_eventaddress"
             android:layout_marginTop="5dp"
             android:background="@color/line"></View>
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -153,22 +200,23 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/tsbryname"
+            android:id="@+id/tsjzb"
             style="@style/MyTextView14"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
-            android:text="    上报人:"
+            android:text="事件坐标:"
             android:textColor="#333" />
 
         <EditText
-            android:id="@+id/ed_shagnbaorenname"
+            android:id="@+id/ed_sjzuobiao"
             android:layout_width="250dp"
             android:layout_height="35dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="2dp"
-            android:layout_toRightOf="@+id/tsbryname"
+            android:layout_toRightOf="@+id/tsjzb"
             android:background="@null"
-            android:hint="请输入上报人姓名"
+            android:editable="false"
+            android:hint="点击获取坐标"
             android:paddingLeft="10dp"
             android:textColor="#666"
             android:textColorHint="#999"
@@ -177,7 +225,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:layout_below="@+id/ed_shagnbaorenname"
+            android:layout_below="@+id/ed_sjzuobiao"
             android:layout_marginTop="5dp"
             android:background="@color/line"></View>
 
@@ -189,22 +237,22 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/tsbryteltephone"
+            android:id="@+id/tspren"
             style="@style/MyTextView14"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
-            android:text="上报人电话:"
+            android:text="    审批人:"
             android:textColor="#333" />
 
         <EditText
-            android:id="@+id/ed_shagnbaorentelephone"
+            android:id="@+id/ed_shengpiren"
             android:layout_width="250dp"
             android:layout_height="35dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="2dp"
-            android:layout_toRightOf="@+id/tsbryteltephone"
+            android:layout_toRightOf="@+id/tspren"
             android:background="@null"
-            android:hint="请输入上报人电话"
+            android:hint="请选择审批人"
             android:paddingLeft="10dp"
             android:textColor="#666"
             android:textColorHint="#999"
@@ -213,9 +261,17 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:layout_below="@+id/ed_shagnbaorentelephone"
+            android:layout_below="@+id/ed_shengpiren"
             android:layout_marginTop="5dp"
             android:background="@color/line"></View>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/more2" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -227,7 +283,7 @@
             style="@style/MyTextView14"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
-            android:text="所属乡镇:"
+            android:text="行政区域:"
             android:textColor="#333" />
 
         <EditText
@@ -238,7 +294,8 @@
             android:layout_marginLeft="2dp"
             android:layout_toRightOf="@+id/tssxz"
             android:background="@null"
-            android:hint="点击选择所属乡镇"
+            android:hint="点击选择行政区域"
+            android:editable="false"
             android:paddingLeft="10dp"
             android:textColor="#666"
             android:textColorHint="#999"
@@ -303,7 +360,50 @@
             android:background="@drawable/more2" />
     </RelativeLayout>
 
-    <RelativeLayout
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tclsx"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="处理时限:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_eventclsx"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/tclsx"
+                    android:background="@null"
+                    android:hint="点击选择处理时限"
+                    android:editable="false"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_eventclsx"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more2" />
+            </RelativeLayout>
+
+            <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_margin="15dp"
@@ -316,6 +416,7 @@
             android:layout_margin="10dp"
             android:background="@null"
             android:gravity="top"
+            android:id="@+id/ed_bz"
             android:hint="请输入事件详细内容.."
             android:textColor="#444"
             android:textColorHint="#999"
@@ -323,17 +424,44 @@
     </RelativeLayout>
 
     <TextView
+        android:visibility="gone"
         style="@style/MyTextView14"
         android:layout_marginLeft="15dp"
         android:text="点击下方图标上传图片:"
         android:textColor="#444444" />
 
-    <ImageView
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="10dp"
-        android:background="@mipmap/add_pic" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="15dp"
+                    android:visibility="visible"
+                    android:id="@+id/iv_pic1"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/add_pic" />
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="30dp"
+                    android:visibility="visible"
+                    android:id="@+id/iv_pic2"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/add_pic" />
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="30dp"
+                    android:visibility="visible"
+                    android:id="@+id/iv_pic3"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/add_pic" />
+
+            </LinearLayout>
+
 
     <Button
         android:layout_width="match_parent"
@@ -341,6 +469,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="15dp"
+        android:id="@+id/btn_comit"
         android:background="@drawable/qqlv"
         android:text="确认提交"
         android:textColor="#FFFFFF"

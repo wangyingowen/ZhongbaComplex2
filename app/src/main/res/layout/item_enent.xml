@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_content"
+        android:layout_height="wrap_content">
+
+
+        <com.shibei.zb.zhongbacomplex.View.RoundAngleImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/im_headicon"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/img_defaultother"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:text="事件名称"
+            android:layout_toRightOf="@+id/im_headicon"
+            android:id="@+id/tx_name"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/im_headicon"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#666"
+            android:text="发生时间:2017-11-03 17:45"
+            android:layout_toRightOf="@+id/im_headicon"
+            android:id="@+id/tx_time"
+           android:layout_below="@+id/tx_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#FF0000"
+            android:text=""
+            android:id="@+id/tx_satues"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/im_headicon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#666"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="位于成绵乐高速上面的一次哄抢事件，请求派人支援，不然场面得不到控制"
+            android:layout_toRightOf="@+id/im_headicon"
+            android:id="@+id/tx_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tx_time"
+            android:layout_marginTop="5dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+           android:layout_below="@id/tx_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/line"></View>
+    </RelativeLayout>
+</LinearLayout>

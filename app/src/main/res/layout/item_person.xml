@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_content"
+        android:layout_height="80dp">
+
+
+        <com.shibei.zb.zhongbacomplex.View.RoundAngleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/im_headicon"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/defaultheadicon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:text="姓名"
+            android:layout_toRightOf="@+id/im_headicon"
+            android:id="@+id/tx_name"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/im_headicon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#444"
+            android:text="性别:男"
+            android:id="@+id/tx_sex"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/im_headicon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#444"
+            android:text="身份证号:515238888888888"
+            android:layout_toRightOf="@+id/im_headicon"
+            android:id="@+id/tx_cardnum"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/im_headicon"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"></View>
+    </RelativeLayout>
+</LinearLayout>

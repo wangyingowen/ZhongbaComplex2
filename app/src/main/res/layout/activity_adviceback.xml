@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    >
+
+    <com.shibei.zb.zhongbacomplex.View.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:centerText="意见反馈"
+        ></com.shibei.zb.zhongbacomplex.View.TopBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/qqwihte"
+        android:layout_margin="15dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:padding="10dp"
+            android:id="@+id/ed_content"
+            android:textSize="14sp"
+            android:gravity="start"
+            android:hint="请输入对本软件的意见~"
+            android:textColorHint="#666"
+
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/qqlv"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFF"
+        android:text="确认提交"
+        android:id="@+id/btn_comit23"
+        />
+</LinearLayout>

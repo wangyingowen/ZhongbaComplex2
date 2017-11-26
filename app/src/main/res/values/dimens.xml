@@ -2,4 +2,15 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+
+    <dimen name="rdo6">500.0dip</dimen>
+    <dimen name="indicator_right_padding">10.0dip</dimen>
+    <dimen name="indicator_corner_radius">12.0dip</dimen>
+    <dimen name="indicator_internal_padding2">10.0dip</dimen>
+    <dimen name="indicator_internal_padding">4.0dip</dimen>
+    <dimen name="header_footer_left_right_padding">24.0dip</dimen>
+    <dimen name="header_footer_top_bottom_padding">12.0dip</dimen>
+
 </resources>

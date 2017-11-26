@@ -24,8 +24,8 @@
                 android:background="@color/blue">
 
 
-                <ImageView
-                    android:id="@+id/im_headicon"
+                <com.shibei.zb.zhongbacomplex.View.RoundAngleImageView
+                    android:id="@+id/im_headicon2"
                     android:layout_width="55dp"
                     android:layout_height="55dp"
                     android:layout_marginLeft="15dp"
@@ -38,7 +38,7 @@
                     style="@style/MyTextView16"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="20dp"
-                    android:layout_toRightOf="@+id/im_headicon"
+                    android:layout_toRightOf="@+id/im_headicon2"
                     android:text="@string/username"
                     android:textColor="#fff" />
 
@@ -49,7 +49,7 @@
                     android:layout_below="@+id/tx_username"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
-                    android:layout_toRightOf="@+id/im_headicon"
+                    android:layout_toRightOf="@+id/im_headicon2"
                     android:text="@string/home_rybh"
                     android:textColor="#fff" />
 
@@ -69,7 +69,7 @@
                     style="@style/MyTextView14"
                     android:layout_below="@+id/tx_rybh"
                     android:layout_marginLeft="10dp"
-                    android:layout_toRightOf="@+id/im_headicon"
+                    android:layout_toRightOf="@+id/im_headicon2"
                     android:text="@string/home_bmmc"
                     android:textColor="#fff" />
 

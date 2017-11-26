@@ -15,7 +15,7 @@
         ></com.shibei.zb.zhongbacomplex.View.TopBar>
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:cacheColorHint="@color/touming"
         android:id="@+id/lst_mytask"
         android:divider="@null"
@@ -43,6 +43,7 @@
             <TextView
                style="@style/MyTextView14"
                 android:textColor="#ccc"
+                android:id="@+id/tx_nodata"
                 android:text="你还未录入任何人员信息，请点击右上角新增~"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/imnodata"

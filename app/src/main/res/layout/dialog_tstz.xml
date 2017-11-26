@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:text="请选择特征(可多选)"
+            android:textColor="@color/blue"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="15dp"
+        android:background="@color/line"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="14sp"
+               android:textColor="#333"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="15dp"
+               android:id="@+id/t1"
+               android:text="刑满释放人员"
+               />
+           <CheckBox
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="15dp"
+               android:layout_centerVertical="true"
+               android:id="@+id/check_1"
+               />
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1px"
+               android:background="@color/line"
+               android:layout_alignParentBottom="true"/>
+
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#333"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/t2"
+                android:text="社区矫正人员"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/check_2"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#333"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/t3"
+                android:text="吸毒人员"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/check_3"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#333"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/t4"
+                android:text="艾滋病人员"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/check_4"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#333"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/t5"
+                android:text="精神病患者"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/check_5"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#333"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/t6"
+                android:text="重点青少年"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/check_6"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#333"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/t7"
+                android:text="孤寡老人"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/check_7"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#333"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/t8"
+                android:text="优抚人员"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/check_8"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="确定"
+            android:background="@drawable/qqlv"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

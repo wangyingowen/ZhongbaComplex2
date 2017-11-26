@@ -13,7 +13,7 @@
         app:centerText="我的任务"></com.shibei.zb.zhongbacomplex.View.TopBar>
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:cacheColorHint="@color/touming"
         android:id="@+id/lst_mytask"
         android:divider="@null"
