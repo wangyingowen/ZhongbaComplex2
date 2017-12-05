@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFF"
+    android:background="#F2F2F2"
     >
 
     <com.shibei.zb.zhongbacomplex.View.TopBar
@@ -15,10 +15,64 @@
         app:rightText="提交"
         ></com.shibei.zb.zhongbacomplex.View.TopBar>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="14sp"
+        android:textColor="#333"
+        android:text="重要性："
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/qqwihte"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/rl_yzdj"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:id="@+id/imdwxz"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/more2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:id="@+id/tx_level"
+            android:text="一般"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+
+            />
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="14sp"
+        android:textColor="#333"
+        android:text="内容："
+        />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/aw4"
         android:focusableInTouchMode="true"
         android:focusable="true"

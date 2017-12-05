@@ -55,6 +55,11 @@
         <activity android:name=".UI.EventListActivity" />
         <activity android:name=".UI.AdviceBackActivity" />
         <activity android:name=".UI.AboutUsActivity" />
+        <activity android:name=".UI.PersonInfoActivity" />
+        <activity android:name=".UI.TaskDetialActivity" />
+        <activity android:name=".UI.AddTaskDoActvity" />
+        <activity android:name=".UI.TaskDoDetial" />
+        <activity android:name=".UI.ImagePagerActivity" />
 
         <service android:name=".Service.LocationService"></service>
     </application>

@@ -12,6 +12,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:id="@+id/rl_root"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -40,6 +41,7 @@
                     android:layout_below="@+id/tx_name"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="5dp"
+                    android:id="@+id/tx_bumen"
                     android:text="xxx街道派出所巡警"
                     android:textColor="#FFF"
                     android:textSize="14sp"
@@ -62,8 +64,8 @@
                     android:layout_height="80dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="75dp"
-                    android:scaleType="centerCrop"
-                    android:src="@mipmap/beck" />
+                    android:id="@+id/im_headicon"
+                    android:scaleType="centerCrop" />
 
                 <ImageView
                     android:layout_width="80dp"

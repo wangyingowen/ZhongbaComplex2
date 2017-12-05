@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+
+        <com.shibei.zb.zhongbacomplex.View.RoundAngleImageView
+            android:id="@+id/im_headicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitStart"
+            android:background="@mipmap/eventtype" />
+
+        <TextView
+            android:id="@+id/tx_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/im_headicon"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tx_status_display"
+            android:layout_toRightOf="@+id/im_headicon"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="2"
+            android:layout_marginLeft="10dp"
+            android:text="啊啊所多撒撒"
+            android:textColor="#444"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tx_status_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/im_headicon"
+            android:layout_marginRight="10dp"
+            android:text="新任务"
+            android:textColor="#ff0000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tx_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/im_headicon"
+            android:text="处理时限:6小时"
+            android:textColor="#444"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"></View>
+    </RelativeLayout>
+</LinearLayout>

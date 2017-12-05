@@ -3,13 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <ListView
+
+    <library.PullToRefreshListView
         android:id="@+id/lst_mytask"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:cacheColorHint="#00000000"
-        android:visibility="gone"
-        android:divider="@null"></ListView>
+        android:divider="@null"
+        ></library.PullToRefreshListView>
 
 
     <RelativeLayout

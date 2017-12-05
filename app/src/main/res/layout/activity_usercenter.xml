@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:id="@+id/rl_root"
+    >
+
+    <com.shibei.zb.zhongbacomplex.View.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:centerText="我的资料"
+        ></com.shibei.zb.zhongbacomplex.View.TopBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+
+        android:background="#f2f2f2"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl_gaosi"
+            ></ImageView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_updateheadicon"
+            android:layout_centerInParent="true"
+            >
+            <com.shibei.zb.zhongbacomplex.View.RoundAngleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@mipmap/defaultheadicon"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/im_headicon"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/blue"
+                android:layout_below="@+id/im_headicon"
+                android:id="@+id/tx_qiandaostaue"
+                android:layout_centerHorizontal="true"
+                android:text="点击修改头像"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tx_name"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="姓名:王大陆"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"></View>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tx_num"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="编号:1234455666"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"></View>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tx_sex"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="性别:男"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"></View>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tx_job"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="职务:xxxxx"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"></View>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tx_bm"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="部门:xxxxx"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"></View>
+
+    </RelativeLayout>
+
+</LinearLayout>

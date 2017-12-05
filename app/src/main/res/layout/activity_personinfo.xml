@@ -10,18 +10,19 @@
         android:id="@+id/topbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:centerText="日报"
+        app:centerText="人员信息"
         app:rightText="新增"
         ></com.shibei.zb.zhongbacomplex.View.TopBar>
-    <library.PullToRefreshListView
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:cacheColorHint="@color/touming"
-        android:id="@+id/lst_mytask2"
+        android:id="@+id/lst_mytask"
         android:divider="@null"
+        android:visibility="gone"
         >
 
-    </library.PullToRefreshListView>
+    </ListView>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -42,7 +43,8 @@
             <TextView
                style="@style/MyTextView14"
                 android:textColor="#ccc"
-                android:text="暂无日报，请点击右上角添加~"
+                android:id="@+id/tx_nodata"
+                android:text="你还未录入任何人员信息，请点击右上角新增~"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/imnodata"
                 android:layout_marginTop="10dp"

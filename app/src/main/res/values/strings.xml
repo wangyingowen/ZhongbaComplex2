@@ -66,4 +66,6 @@
 财政部办公厅
 住房城乡建设部办公厅
 2017年9月25日</string>
+
+    <string name="viewpager_indicator">%1$d/%2$d</string>
 </resources>
