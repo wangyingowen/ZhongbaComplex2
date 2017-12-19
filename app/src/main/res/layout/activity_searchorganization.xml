@@ -26,7 +26,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
-            android:text="搜索"
+            android:text="取消"
             android:textColor="#FFF"
             android:textSize="15sp" />
 
@@ -51,7 +51,7 @@
                 android:layout_marginRight="5dp"
                 android:background="@null"
                 android:id="@+id/ed_content"
-                android:hint="请输入18位身份证号码"
+                android:hint="请输入组织名称关键字"
                 android:textColor="#444"
                 android:textColorHint="#999"
                 android:textSize="14sp" />
@@ -88,7 +88,7 @@
                 android:layout_marginRight="15dp"
                 android:id="@+id/iv_head"
                 android:scaleType="centerCrop"
-                android:src="@mipmap/defaultheadicon" />
+                android:src="@mipmap/img_defaultother" />
 
         </RelativeLayout>
         <RelativeLayout
@@ -171,8 +171,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
                                 android:layout_marginLeft="10dp"
-                                android:id="@+id/tx_sex"
-                                android:text="性别：男"
+                                android:id="@+id/tx_zzlx"
+                                android:text="组织类型"
                                 android:textColor="#444"
                                 android:textSize="14sp" />
                         </RelativeLayout>
@@ -196,8 +196,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
                                 android:layout_marginLeft="10dp"
-                                android:text="民族：藏族"
-                                android:id="@+id/tx_search_mz"
+                                android:text="联系人"
+                                android:id="@+id/tx_search_lxr"
                                 android:textColor="#444"
                                 android:textSize="14sp" />
                         </RelativeLayout>
@@ -226,8 +226,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
                                 android:layout_marginLeft="10dp"
-                                android:text="政治面貌：党员"
-                                android:id="@+id/tx_search_zzmm"
+                                android:text="联系电话:133333333"
+                                android:id="@+id/tx_search_lxdh"
                                 android:textColor="#444"
                                 android:textSize="14sp" />
                         </RelativeLayout>
@@ -251,8 +251,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
                                 android:layout_marginLeft="10dp"
-                                android:text="出生年月：1988-08"
-                                android:id="@+id/tx_search_birth"
+                                android:text="联系人职务:"
+                                android:id="@+id/tx_search_lxrzw"
                                 android:textColor="#444"
                                 android:textSize="14sp" />
                         </RelativeLayout>
@@ -281,8 +281,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
                                 android:layout_marginLeft="10dp"
-                                android:text="籍贯：西藏.仲巴"
-                                android:id="@+id/tx_search_jiguan"
+                                android:text="行政区域"
+                                android:id="@+id/tx_search_xzqyzz"
                                 android:textColor="#444"
                                 android:textSize="14sp" />
                         </RelativeLayout>
@@ -290,116 +290,6 @@
 
                     </RelativeLayout>
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-
-                        >
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_toLeftOf="@+id/v312">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerVertical="true"
-                                android:layout_marginLeft="10dp"
-                                android:text="婚姻状况:已婚"
-                                android:id="@+id/tx_search_hyzk"
-                                android:textColor="#444"
-                                android:textSize="14sp" />
-                        </RelativeLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1px"
-                            android:layout_alignParentBottom="true"
-                            android:background="@color/line" />
-
-                        <View
-                            android:id="@+id/v312"
-                            android:layout_width="1px"
-                            android:layout_height="match_parent"
-                            android:layout_centerHorizontal="true"
-                            android:background="@color/line" />
-
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_toRightOf="@+id/v312">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerVertical="true"
-                                android:layout_marginLeft="10dp"
-                                android:text="生育状况:无"
-                                android:id="@+id/tx_search_syzk"
-                                android:textColor="#444"
-                                android:textSize="14sp" />
-                        </RelativeLayout>
-
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-
-                        >
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_toLeftOf="@+id/v1">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerVertical="true"
-                                android:layout_marginLeft="10dp"
-                                android:text="宗教信仰:佛教"
-                                android:id="@+id/tx_search_zjxy"
-                                android:textColor="#444"
-                                android:textSize="14sp" />
-                        </RelativeLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1px"
-                            android:layout_alignParentBottom="true"
-                            android:background="@color/line" />
-
-                        <View
-                            android:id="@+id/v1"
-                            android:layout_width="1px"
-                            android:layout_height="match_parent"
-                            android:layout_centerHorizontal="true"
-                            android:background="@color/line" />
-
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_toRightOf="@+id/v1">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerVertical="true"
-                                android:layout_marginLeft="10dp"
-                                android:scrollIndicators=""
-                                android:id="@+id/tx_search_jkzk"
-                                android:text="健康状况:健康"
-                                android:textColor="#444"
-                                android:textSize="14sp" />
-                        </RelativeLayout>
-
-
-                    </RelativeLayout>
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -410,8 +300,8 @@
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:layout_marginLeft="10dp"
-                            android:text="特殊特征:"
-                            android:id="@+id/tx_search_tstz"
+                            android:text="地址:"
+                            android:id="@+id/tx_search_addresszz"
                             android:textColor="#444"
                             android:textSize="14sp" />
                     </RelativeLayout>
@@ -423,15 +313,16 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="40dp">
+                        android:layout_height="100dp">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
                             android:layout_marginLeft="10dp"
-                            android:id="@+id/tx_search_address"
-                            android:text="详细地址:"
+                            android:id="@+id/tx_search_bz"
+                            android:text="备注:"
                             android:textColor="#444"
                             android:textSize="14sp" />
                     </RelativeLayout>
@@ -444,81 +335,6 @@
 
 
             </ScrollView>
-
-            <RelativeLayout
-                android:id="@+id/rl_houseinfo"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_above="@+id/rl_carinfo"
-                android:background="@color/blue">
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:background="@color/line"></View>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_alignParentBottom="true"
-                    android:background="@color/line"></View>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:text="房产信息:"
-                    android:textColor="#FFF"
-                    android:textSize="14sp" />
-
-                <ImageView
-                    android:id="@+id/im_houseimg"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="10dp"
-                    android:background="@mipmap/youjiantou" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/rl_carinfo"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_alignParentBottom="true"
-                android:background="@color/blue">
-
-                <!--    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
-                        android:background="@color/line"></View>-->
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:text="机动车信息:"
-                    android:textColor="#FFF"
-                    android:textSize="14sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_alignParentBottom="true"
-                    android:background="@color/line"></View>
-
-                <ImageView
-                    android:id="@+id/im_carimg"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="10dp"
-                    android:background="@mipmap/youjiantou" />
-
-            </RelativeLayout>
 
 
         </RelativeLayout>
@@ -551,7 +367,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:text="暂无该身份证信息"
+                android:text="暂无该组织信息"
                 android:layout_below="@+id/im1"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"

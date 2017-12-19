@@ -1,638 +1,690 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF"
     android:orientation="vertical">
 
-    <LinearLayout
+    <com.shibei.zb.zhongbacomplex.View.TopBar
+        android:id="@+id/topbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/rl_root"
-        android:orientation="vertical">
+        android:layout_height="50dp"
+        app:centerText="房屋采集"></com.shibei.zb.zhongbacomplex.View.TopBar>
 
-        <RelativeLayout
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@color/blue">
+            android:layout_height="match_parent"
+            android:id="@+id/rl_root"
+            android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/im_back"
-                android:layout_width="40dp"
-                android:layout_height="20dp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
-                android:paddingLeft="-20dp"
-                android:src="@drawable/returnlase" />
-
-            <TextView
-                style="@style/MyTextView16"
-                android:layout_centerInParent="true"
-                android:text="@string/house_title2"
-                android:textColor="#FFF" />
-
-            <TextView
-                style="@style/MyTextView14"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="10dp"
-                android:text="@string/cancle"
-                android:textColor="#FFF" />
-        </RelativeLayout>
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="150dp"
 
-                <LinearLayout
-                    android:id="@+id/ll_addpic"
+                android:background="#f2f2f2"
+                >
+
+                <ImageView
+                    android:id="@+id/rl_gaosi"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"></ImageView>
 
-                    <ImageView
-                        android:id="@+id/im_headicon"
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl_updateheadicon"
+                    android:layout_centerInParent="true"
+                    >
+                    <com.shibei.zb.zhongbacomplex.View.RoundAngleImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="20dp"
-                        android:background="@drawable/tupianshangchuan" />
-
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tupianshangchuan"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/im_headicon"
+                        />
                     <TextView
                         style="@style/MyTextView12"
                         android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="1dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/im_headicon"
                         android:text="点击上传房屋照片" />
-                </LinearLayout>
 
-                <ImageView
-                    android:id="@+id/im_housepic"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:scaleType="centerCrop" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#f2f2f2"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    style="@style/MyTextView12"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#d81e06"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/t21"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="名称:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_name"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/t21"
+                    android:background="@null"
+
+                    android:maxLines="1"
+                    android:hint="请输入房屋名称"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="10dp"
-                    android:background="#f2f2f2" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:focusable="true"
-                    android:focusableInTouchMode="true"
-
-                    android:visibility="gone">
-
-                    <TextView
-                        style="@style/MyTextView12"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:text="*"
-                        android:textColor="#d81e06" />
-
-                    <TextView
-                        android:id="@+id/t11"
-                        style="@style/MyTextView14"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="15dp"
-                        android:text="房屋编号:"
-                        android:textColor="#333" />
-
-                    <EditText
-                        android:id="@+id/ed_housenum"
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="2dp"
-                        android:layout_toRightOf="@+id/t11"
-                        android:background="@null"
-                        android:hint="请输入房屋编号"
-                        android:paddingLeft="10dp"
-                        android:textColor="#666"
-                        android:textColorHint="#999"
-                        android:textSize="14sp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
-                        android:layout_below="@+id/ed_housenum"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/line"></View>
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:focusable="true"
-
-                    android:focusableInTouchMode="true">
-
-                    <TextView
-                        style="@style/MyTextView12"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:textColor="#d81e06"
-                        android:visibility="gone" />
-
-                    <TextView
-                        android:id="@+id/t21"
-                        style="@style/MyTextView14"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="15dp"
-                        android:text="户主:"
-                        android:textColor="#333" />
-
-                    <EditText
-                        android:id="@+id/ed_hz"
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="2dp"
-                        android:layout_toRightOf="@+id/t21"
-                        android:background="@null"
-                        android:hint="请输入户主名称"
-                        android:paddingLeft="10dp"
-                        android:textColor="#666"
-                        android:textColorHint="#999"
-                        android:textSize="14sp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
-                        android:layout_below="@+id/ed_hz"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/line"></View>
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        style="@style/MyTextView12"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:textColor="#d81e06"
-                        android:visibility="gone" />
-
-                    <TextView
-                        android:id="@+id/t31"
-                        style="@style/MyTextView14"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="15dp"
-                        android:text="户主联系电话:"
-                        android:textColor="#333" />
-
-                    <EditText
-                        android:id="@+id/ed_huzhulxdh"
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="2dp"
-                        android:layout_toRightOf="@+id/t31"
-                        android:background="@null"
-                        android:hint="请输入户主联系电话"
-                        android:paddingLeft="10dp"
-                        android:textColor="#666"
-                        android:textColorHint="#999"
-                        android:textSize="14sp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
-                        android:layout_below="@+id/ed_huzhulxdh"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/line"></View>
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-
-
-                    <TextView
-                        android:id="@+id/t41"
-                        style="@style/MyTextView14"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="15dp"
-                        android:text="行政区域:"
-                        android:textColor="#333" />
-
-                    <EditText
-                        android:id="@+id/ed_suoshuxiangzheng"
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="2dp"
-                        android:layout_toRightOf="@+id/t41"
-                        android:background="@null"
-                        android:hint="点击选择乡镇"
-                        android:paddingLeft="10dp"
-                        android:textColor="#666"
-                        android:editable="false"
-                        android:textColorHint="#999"
-                        android:textSize="14sp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
-                        android:layout_below="@+id/ed_suoshuxiangzheng"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/line"></View>
-
-                    <ImageView
-                        android:layout_width="15dp"
-                        android:layout_height="10dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/more2" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-
-
-                    <TextView
-                        android:id="@+id/t51"
-                        style="@style/MyTextView14"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="15dp"
-                        android:text="房屋间数："
-                        android:textColor="#333" />
-
-                    <EditText
-                        android:id="@+id/ed_roomcount"
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="2dp"
-                        android:layout_toRightOf="@+id/t51"
-                        android:background="@null"
-                        android:hint="请输入房屋间数"
-                        android:inputType="number"
-                        android:maxLength="2"
-                        android:paddingLeft="10dp"
-                        android:textColor="#666"
-                        android:textColorHint="#999"
-                        android:textSize="14sp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
-                        android:layout_below="@+id/ed_roomcount"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/line"></View>
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-
-
-                    <TextView
-                        android:id="@+id/t61"
-                        style="@style/MyTextView14"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="15dp"
-                        android:text="房屋面积："
-                        android:textColor="#333" />
-
-                    <EditText
-                        android:id="@+id/ed_housesize"
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="2dp"
-                        android:layout_toRightOf="@+id/t61"
-                        android:background="@null"
-                        android:hint="请输入房屋面积"
-                        android:paddingLeft="10dp"
-                        android:textColor="#666"
-                        android:textColorHint="#999"
-                        android:textSize="14sp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
-                        android:layout_below="@+id/ed_housesize"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/line"></View>
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-
-
-                    <TextView
-                        android:id="@+id/t71"
-                        style="@style/MyTextView14"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="15dp"
-                        android:text="房屋类型："
-                        android:textColor="#333" />
-
-                    <EditText
-                        android:id="@+id/ed_housetype"
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="2dp"
-                        android:layout_toRightOf="@+id/t71"
-                        android:background="@null"
-
-                        android:editable="false"
-                        android:hint="请输入房屋类型"
-                        android:paddingLeft="10dp"
-                        android:textColor="#666"
-                        android:textColorHint="#999"
-                        android:textSize="14sp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
-                        android:layout_below="@+id/ed_housetype"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/line"></View>
-
-                    <ImageView
-                        android:layout_width="15dp"
-                        android:layout_height="10dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/more2" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-
-
-                    <TextView
-                        android:id="@+id/t81"
-                        style="@style/MyTextView14"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="15dp"
-                        android:text="房屋产权："
-                        android:textColor="#333" />
-
-                    <EditText
-                        android:id="@+id/ed_chanquan"
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="2dp"
-                        android:layout_toRightOf="@+id/t81"
-                        android:background="@null"
-                        android:hint="请选择房屋产权"
-                        android:paddingLeft="10dp"
-                        android:editable="false"
-                        android:textColor="#666"
-                        android:textColorHint="#999"
-                        android:textSize="14sp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
-                        android:layout_below="@+id/ed_chanquan"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/line"></View>
-
-                    <ImageView
-                        android:layout_width="15dp"
-                        android:layout_height="10dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/more2" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-
-                    <TextView
-                        android:id="@+id/t91"
-                        style="@style/MyTextView14"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="15dp"
-                        android:text="房屋地址："
-                        android:textColor="#333" />
-
-                    <EditText
-                        android:id="@+id/ed_adress"
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="2dp"
-                        android:layout_toRightOf="@+id/t91"
-                        android:background="@null"
-                        android:hint="请输入房屋地址"
-                        android:paddingLeft="10dp"
-                        android:textColor="#666"
-                        android:textColorHint="#999"
-                        android:textSize="14sp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
-                        android:layout_below="@+id/ed_adress"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/line"></View>
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-
-
-                    <TextView
-                        android:id="@+id/t101"
-                        style="@style/MyTextView14"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="15dp"
-                        android:text="房屋坐标："
-                        android:textColor="#333" />
-
-                    <EditText
-                        android:id="@+id/ed_gpspoint"
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="2dp"
-                        android:layout_toRightOf="@+id/t101"
-                        android:background="@null"
-                        android:editable="false"
-                        android:hint="请在房屋正门位置点击获取坐标"
-                        android:paddingLeft="10dp"
-                        android:textColor="#666"
-                        android:textColorHint="#999"
-                        android:textSize="14sp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
-                        android:layout_below="@+id/ed_gpspoint"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/line"></View>
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-
-                    <TextView
-                        android:id="@+id/t111"
-                        style="@style/MyTextView14"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="15dp"
-                        android:text="用水用电："
-                        android:textColor="#333" />
-
-                    <EditText
-                        android:id="@+id/ed_ysyd"
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="2dp"
-                        android:layout_toRightOf="@+id/t111"
-                        android:background="@null"
-                        android:hint="点击选择用水用电情况"
-                        android:paddingLeft="10dp"
-                        android:textColor="#666"
-                        android:textColorHint="#999"
-                        android:textSize="14sp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
-                        android:layout_below="@+id/ed_ysyd"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/line"></View>
-                    <ImageView
-                        android:layout_width="15dp"
-                        android:layout_height="10dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/more2" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-
-                    <TextView
-                        android:id="@+id/t121"
-                        style="@style/MyTextView14"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="15dp"
-                        android:text="房屋年限："
-                        android:textColor="#333" />
-
-                    <EditText
-                        android:id="@+id/ed_usetime"
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="2dp"
-                        android:layout_toRightOf="@+id/t121"
-                        android:background="@null"
-                        android:hint="请输入房屋年限"
-                        android:paddingLeft="10dp"
-                        android:textColor="#666"
-                        android:textColorHint="#999"
-                        android:textSize="14sp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
-                        android:layout_below="@+id/ed_usetime"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/line"></View>
-                    <ImageView
-                        android:layout_width="15dp"
-                        android:layout_height="10dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:background="@drawable/more2" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-
-                    <TextView
-                        android:id="@+id/t12112"
-                        style="@style/MyTextView14"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="15dp"
-                        android:text="购买时间："
-                        android:textColor="#333" />
-
-                    <EditText
-                        android:id="@+id/ed_buildtime"
-                        android:layout_width="250dp"
-                        android:layout_height="35dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="2dp"
-                        android:layout_toRightOf="@+id/t12112"
-                        android:background="@null"
-                        android:editable="false"
-                        android:hint="请输入房屋购买/建造时间"
-                        android:paddingLeft="10dp"
-                        android:textColor="#666"
-                        android:textColorHint="#999"
-                        android:textSize="14sp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
-                        android:layout_below="@+id/ed_buildtime"
-                        android:layout_marginTop="5dp"
-                        android:background="@color/line"></View>
-                </RelativeLayout>
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_margin="15dp"
-                    android:background="@drawable/qqlv"
-                    android:text="确认提交"
-                    android:id="@+id/btn_comit"
-                    android:textColor="#FFF"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_name"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:id="@+id/t2n1"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="简称:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_easyname"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/t2n1"
+                    android:background="@null"
+                    android:hint="请输入房屋简称"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
                     android:textSize="14sp" />
 
-            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_easyname"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+            </RelativeLayout>
 
-        </ScrollView>
-    </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    <View
-        android:id="@+id/viewMask"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#20000000"
-        android:visibility="gone"></View>
-</RelativeLayout>
+                <TextView
+                    android:id="@+id/t41"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="行政区划:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_xzqy"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toLeftOf="@+id/immore1"
+                    android:layout_toRightOf="@+id/t41"
+                    android:background="@null"
+                    android:editable="false"
+                    android:hint="请点击选择行政区域"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_xzqy"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+
+                <ImageView
+                    android:id="@+id/immore1"
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more2" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:id="@+id/t2n12"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="地址:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_adress"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/t2n12"
+                    android:background="@null"
+                    android:hint="请输入房屋建筑地址"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_adress"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:id="@+id/t2n1234"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="联系人:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_lxr"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/t2n1234"
+                    android:background="@null"
+                    android:hint="请输入房屋所有人姓名"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_lxr"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:id="@+id/t2n12345"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="联系人身份证号:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_lxrsfzmhm"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/t2n12345"
+                    android:background="@null"
+                    android:hint="请输入房屋所有人身份证明号码"
+                    android:maxLines="1"
+                    android:maxLength="18"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_lxrsfzmhm"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:id="@+id/t2n124"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="联系电话:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_lxdh"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/t2n124"
+                    android:background="@null"
+                    android:hint="请输入联系电话"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_lxdh"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/t_type"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="产权:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_type"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/immore13"
+                    android:layout_toRightOf="@+id/t_type"
+                    android:background="@null"
+                    android:editable="false"
+                    android:hint="点击选择产权类型"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_type"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+
+                <ImageView
+                    android:id="@+id/immore13"
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more2" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/t_mr"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="类型:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_marry"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toLeftOf="@+id/immore1311"
+                    android:layout_toRightOf="@+id/t_mr"
+                    android:background="@null"
+                    android:editable="false"
+                    android:hint="点击选择类型"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_marry"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+
+                <ImageView
+                    android:id="@+id/immore1311"
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more2" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/t_sy"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="用水用电:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_ysyd"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toLeftOf="@+id/imsy"
+                    android:layout_toRightOf="@+id/t_sy"
+                    android:background="@null"
+                    android:editable="false"
+                    android:hint="点击选择用水用电情况"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_ysyd"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+
+                <ImageView
+                    android:id="@+id/imsy"
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/t_m11"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="购买/修建时间:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_time"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toLeftOf="@+id/immore13112"
+                    android:layout_toRightOf="@+id/t_m11"
+                    android:background="@null"
+                    android:editable="false"
+                    android:hint="点击选择时间"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_time"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+
+                <ImageView
+                    android:id="@+id/immore13112"
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    style="@style/MyTextView12"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#d81e06"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/t2112"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="年限:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_nx"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/t2112"
+                    android:background="@null"
+                    android:inputType="number"
+
+                    android:hint="请输入年限"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_nx"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    style="@style/MyTextView12"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#d81e06"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/t2112j"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="面积:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_mj"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/t2112j"
+                    android:background="@null"
+
+                    android:numeric="decimal"
+                    android:hint="请输入面积(平方米)"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_mj"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    style="@style/MyTextView12"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#d81e06"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/t21122"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="间数:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_roomnum"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/t21122"
+                    android:background="@null"
+
+                    android:hint="请输入间数"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_roomnum"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+            </RelativeLayout>
+
+
+
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/btn_comit"
+                android:background="@drawable/qqlv"
+                android:text="确认提交"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="1px"
+                android:layout_marginTop="15dp"></View>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

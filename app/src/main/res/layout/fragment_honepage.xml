@@ -180,6 +180,7 @@
                         android:layout_marginRight="15dp"
                         android:background="@mipmap/newmsg"
                         android:text="1"
+                        android:id="@+id/btn_taskcount"
                         android:textColor="#FFF"
                         android:textSize="10sp" />
                 </RelativeLayout>

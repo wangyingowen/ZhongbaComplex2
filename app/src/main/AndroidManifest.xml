@@ -60,6 +60,17 @@
         <activity android:name=".UI.AddTaskDoActvity" />
         <activity android:name=".UI.TaskDoDetial" />
         <activity android:name=".UI.ImagePagerActivity" />
+        <activity android:name=".UI.JiaYouZhanListActivity" />
+        <activity android:name=".UI.OrganizationInfoEditActivity" />
+        <activity android:name=".UI.SearchSprActivity" />
+        <activity android:name=".UI.EventCollectionLookActivity" />
+        <activity android:name=".UI.CompanyInfoEditActivity" />
+        <activity android:name=".UI.GassStationInfoActivity" />
+        <activity android:name=".UI.GassStationInfoEditActivity" />
+        <activity android:name=".UI.HouseInfoEditActivity" />
+        <activity android:name=".UI.PersonCarListInfoActivity" />
+        <activity android:name=".UI.SeachCompanyActivity" />
+        <activity android:name=".UI.SeachOrganazitionActivity" />
 
         <service android:name=".Service.LocationService"></service>
     </application>

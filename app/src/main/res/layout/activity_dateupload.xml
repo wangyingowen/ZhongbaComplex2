@@ -42,6 +42,7 @@
             <TextView
                style="@style/MyTextView14"
                 android:textColor="#ccc"
+                android:id="@+id/tv_nodata"
                 android:text="暂无日报，请点击右上角添加~"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/imnodata"

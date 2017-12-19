@@ -8,7 +8,7 @@
     <RelativeLayout
         android:id="@+id/rl_renyuan"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
@@ -28,7 +28,7 @@
             android:layout_alignTop="@+id/i1"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/i1"
-            android:text="人员信息查询"
+            android:text="人口信息查询"
             android:textColor="#444"
             android:textSize="14sp" />
 
@@ -41,7 +41,7 @@
             android:layout_toRightOf="@+id/i1"
             android:ellipsize="end"
             android:maxLines="1"
-            android:text="查询人员基本资料以及关联房产，单位，组织等信息"
+            android:text="查询人口基本资料以及关联房产，单位，组织等信息"
             android:textColor="#999"
             android:textSize="12sp" />
 
@@ -54,7 +54,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:id="@+id/rl_fangchan"
         >
 
@@ -98,7 +98,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:id="@+id/rl_danwei"
         >
 
@@ -140,7 +140,7 @@
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:id="@+id/rl_zuzhih"
         >
 

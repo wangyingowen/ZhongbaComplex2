@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_content"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:text="选择项"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/tx_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="100dp"
+            />
+
+        <Button
+            android:layout_width="70dp"
+            android:background="@drawable/qqlv"
+            android:text="选择"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:id="@+id/btn_choose"
+            android:textSize="14sp"
+            android:layout_height="30dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"></View>
+    </RelativeLayout>
+</LinearLayout>

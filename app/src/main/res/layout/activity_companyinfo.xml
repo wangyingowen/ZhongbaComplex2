@@ -21,27 +21,44 @@
             android:id="@+id/rl_root"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:id="@+id/ll_addpic"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="150dp"
+
+                android:background="#f2f2f2"
+                >
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="20dp"
-                    android:id="@+id/im_headicon"
-                    android:background="@drawable/tupianshangchuan" />
+                    android:id="@+id/rl_gaosi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"></ImageView>
 
-                <TextView
-                    style="@style/MyTextView12"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="1dp"
-                    android:text="点击上传单位照片" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl_updateheadicon"
+                    android:layout_centerInParent="true"
+                    >
+                    <com.shibei.zb.zhongbacomplex.View.RoundAngleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tupianshangchuan"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/im_headicon"
+                        />
+                    <TextView
+                        style="@style/MyTextView12"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/im_headicon"
+                        android:text="点击上传单位照片" />
 
-            </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
 
             <View
                 android:layout_width="match_parent"
@@ -93,6 +110,94 @@
                     android:layout_below="@+id/ed_name"
                     android:layout_marginTop="5dp"
                     android:background="@color/line"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    style="@style/MyTextView12"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#d81e06"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/t21jc"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="单位简称:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_easyname"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/t21jc"
+                    android:background="@null"
+                    android:hint="请输入单位简称"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_easyname"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txqzyq1"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="行政区域:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_xzqy"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_toLeftOf="@+id/imdwxz2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/txqzyq1"
+                    android:background="@null"
+                    android:hint="请点击选择行政区域"
+                    android:paddingLeft="10dp"
+                    android:editable="false"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_xzqy"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/imdwxz2"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more2" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -176,7 +281,7 @@
                     style="@style/MyTextView14"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:text="联系人电话:"
+                    android:text="联系电话:"
                     android:textColor="#333" />
 
                 <EditText
@@ -188,7 +293,7 @@
                     android:layout_toRightOf="@+id/t_type2"
                     android:background="@null"
                     android:inputType="phone"
-                    android:hint="请输入联系人电话"
+                    android:hint="请输入联系电话"
                     android:paddingLeft="10dp"
                     android:textColor="#666"
                     android:textColorHint="#999"
@@ -212,18 +317,18 @@
                     style="@style/MyTextView14"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:text="联系人职务:"
+                    android:text="法人代表:"
                     android:textColor="#333" />
 
                 <EditText
-                    android:id="@+id/ed_zhiwu"
+                    android:id="@+id/ed_frdb"
                     android:layout_width="250dp"
                     android:layout_height="35dp"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="2dp"
                     android:layout_toRightOf="@+id/tmz"
                     android:background="@null"
-                    android:hint="请输入联系人职务"
+                    android:hint="请输入法人代表姓名"
                     android:paddingLeft="10dp"
                     android:textColor="#666"
                     android:textColorHint="#999"
@@ -255,7 +360,7 @@
                     style="@style/MyTextView14"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:text="单位面积:"
+                    android:text="法人手机号码:"
                     android:textColor="#333" />
 
                 <EditText
@@ -266,7 +371,7 @@
                     android:layout_marginLeft="2dp"
                     android:layout_toRightOf="@+id/tzzmm"
                     android:background="@null"
-                    android:hint="请输入单位占地面积（平方）"
+                    android:hint="请输入法人手机号码"
                     android:inputType="number"
                     android:paddingLeft="10dp"
                     android:textColor="#666"
@@ -288,11 +393,53 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    style="@style/MyTextView12"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#d81e06"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tzzmm3"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="法人身份证号:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_frsfzmhm"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/tzzmm3"
+                    android:background="@null"
+                    android:hint="请输入法人身份证号码"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_frsfzmhm"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
                     android:id="@+id/tsbryname"
                     style="@style/MyTextView14"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:text="单位性质:"
+                    android:text="发证时间:"
                     android:textColor="#333" />
 
                 <EditText
@@ -304,7 +451,8 @@
                     android:layout_marginLeft="2dp"
                     android:layout_toRightOf="@+id/tsbryname"
                     android:background="@null"
-                    android:hint="请点击选择单位性质"
+                    android:hint="请点击选择发证时间"
+                    android:editable="false"
                     android:paddingLeft="10dp"
                     android:textColor="#666"
                     android:textColorHint="#999"
@@ -325,6 +473,95 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/more2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/MyTextView12"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#d81e06"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tzzmm2"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="组织机构代码:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_zzjgdm"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/tzzmm2"
+                    android:background="@null"
+                    android:hint="请输入组织机构代码"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_zzjgdm"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/MyTextView12"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#d81e06"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tzzmm1"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="注册资金:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_zczh"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/tzzmm1"
+                    android:background="@null"
+                    android:hint="请输入注册资金"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_zczh"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -372,6 +609,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/qqlv"
+                android:id="@+id/btn_comit"
                 android:text="确认提交"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp" />

@@ -16,7 +16,7 @@
             android:id="@+id/im_headicon"
             android:scaleType="centerCrop"
             android:layout_marginLeft="10dp"
-            android:src="@mipmap/img_defaultother"
+            android:background="@mipmap/img_defaultother"
             />
         <TextView
             android:layout_width="wrap_content"
