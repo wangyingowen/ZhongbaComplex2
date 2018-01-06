@@ -23,9 +23,11 @@
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:textColor="#444"
-            android:text="事件名称"
+            android:text="事件名称事件名称事件名称事件名称事件名称事件名称事件名称事件名称事件名称"
             android:layout_toRightOf="@+id/im_headicon"
             android:id="@+id/tx_name"
+            android:maxLines="2"
+            android:ellipsize="end"
             android:layout_marginLeft="10dp"
             android:layout_alignTop="@+id/im_headicon"
             />

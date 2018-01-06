@@ -9,7 +9,7 @@
         android:id="@+id/topbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:centerText="组织信息采集"></com.shibei.zb.zhongbacomplex.View.TopBar>
+        app:centerText="新增车辆"></com.shibei.zb.zhongbacomplex.View.TopBar>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,53 +21,9 @@
             android:id="@+id/root"
             android:orientation="vertical">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-
-                android:background="#f2f2f2"
-                >
-
-                <ImageView
-                    android:id="@+id/rl_gaosi"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"></ImageView>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rl_updateheadicon"
-                    android:layout_centerInParent="true"
-                    >
-                    <com.shibei.zb.zhongbacomplex.View.RoundAngleImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/tupianshangchuan"
-                        android:layout_centerHorizontal="true"
-                        android:id="@+id/im_headicon"
-                        />
-                    <TextView
-                        style="@style/MyTextView12"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="5dp"
-                        android:layout_below="@+id/im_headicon"
-                        android:text="点击上传组织照片" />
-
-                </RelativeLayout>
-            </RelativeLayout>
-
             <View
                 android:layout_width="match_parent"
                 android:layout_height="15dp"></View>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
-                android:background="#f2f2f2"></View>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -87,7 +43,7 @@
                     style="@style/MyTextView14"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:text="组织名称:"
+                    android:text="所有人:"
                     android:textColor="#333" />
 
                 <EditText
@@ -98,8 +54,9 @@
                     android:layout_marginLeft="2dp"
                     android:layout_toRightOf="@+id/t21"
                     android:background="@null"
+                    android:enabled="false"
                     android:maxLines="1"
-                    android:hint="请输入组织名称"
+                    android:hint=""
                     android:paddingLeft="10dp"
                     android:textColor="#666"
                     android:textColorHint="#999"
@@ -122,11 +79,11 @@
                     style="@style/MyTextView14"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:text="组织类型:"
+                    android:text="所有人身份证号:"
                     android:textColor="#333" />
 
                 <EditText
-                    android:id="@+id/ed_type"
+                    android:id="@+id/ed_sfzhm"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:layout_toLeftOf="@+id/imdwxz"
@@ -134,10 +91,83 @@
                     android:layout_marginLeft="2dp"
                     android:layout_toRightOf="@+id/tsbryname"
                     android:background="@null"
-                    android:hint="请点击选择组织类型"
                     android:paddingLeft="10dp"
                     android:textColor="#666"
+                    android:enabled="false"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_sfzhm"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tdd"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="车牌号:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_carnum"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/tdd"
+                    android:background="@null"
+                    android:hint="请输入车牌号，例:藏A00000"
+                    android:paddingLeft="10dp"
+                    android:maxLines="1"
+
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_carnum"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tsxzqy"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="号牌种类:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_toLeftOf="@+id/imqxqy"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/tsxzqy"
+                    android:background="@null"
+                    android:hint="请点击选择车辆号牌种类"
+                    android:paddingLeft="10dp"
                     android:editable="false"
+                    android:textColor="#666"
                     android:textColorHint="#999"
                     android:textSize="14sp" />
 
@@ -151,51 +181,6 @@
                 <ImageView
                     android:layout_width="15dp"
                     android:layout_height="10dp"
-                    android:id="@+id/imdwxz"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/more2" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/tsxzqy"
-                    style="@style/MyTextView14"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:text="行政区域:"
-                    android:textColor="#333" />
-
-                <EditText
-                    android:id="@+id/ed_qzqy"
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_toLeftOf="@+id/imqxqy"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="2dp"
-                    android:layout_toRightOf="@+id/tsxzqy"
-                    android:background="@null"
-                    android:hint="请点击选择行政区域"
-                    android:text="西藏自治区仲巴县"
-                    android:paddingLeft="10dp"
-                    android:editable="false"
-                    android:textColor="#666"
-                    android:textColorHint="#999"
-                    android:textSize="14sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_below="@+id/ed_qzqy"
-                    android:layout_marginTop="5dp"
-                    android:background="@color/line"></View>
-
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="10dp"
                     android:id="@+id/imqxqy"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
@@ -203,42 +188,7 @@
                     android:background="@drawable/more2" />
             </RelativeLayout>
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tdd"
-                    style="@style/MyTextView14"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:text="地址:"
-                    android:textColor="#333" />
-
-                <EditText
-                    android:id="@+id/ed_address"
-                    android:layout_width="250dp"
-                    android:layout_height="35dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="2dp"
-                    android:layout_toRightOf="@+id/tdd"
-                    android:background="@null"
-                    android:hint="请输入组织所在地址"
-                    android:paddingLeft="10dp"
-                    android:maxLines="1"
-                    android:textColor="#666"
-                    android:textColorHint="#999"
-                    android:textSize="14sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_below="@+id/ed_address"
-                    android:layout_marginTop="5dp"
-                    android:background="@color/line"></View>
-
-
-            </RelativeLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -248,11 +198,11 @@
                     style="@style/MyTextView14"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:text="联系人:"
+                    android:text="车辆品牌:"
                     android:textColor="#333" />
 
                 <EditText
-                    android:id="@+id/ed_owenername"
+                    android:id="@+id/ed_clpp"
                     android:layout_width="250dp"
                     android:layout_height="35dp"
                     android:layout_centerVertical="true"
@@ -260,7 +210,7 @@
                     android:layout_toRightOf="@+id/t_type"
                     android:background="@null"
                     android:maxLines="1"
-                    android:hint="请输入联系人姓名"
+                    android:hint="请输入车辆品牌"
                     android:paddingLeft="10dp"
                     android:textColor="#666"
                     android:textColorHint="#999"
@@ -269,35 +219,39 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1px"
-                    android:layout_below="@+id/ed_owenername"
+                    android:layout_below="@+id/ed_clpp"
                     android:layout_marginTop="5dp"
                     android:background="@color/line"></View>
 
 
             </RelativeLayout>
+
+
+
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/t_type2"
+                    android:id="@+id/txcolor"
                     style="@style/MyTextView14"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:text="联系人电话:"
+                    android:text="车身颜色:"
                     android:textColor="#333" />
 
                 <EditText
-                    android:id="@+id/ed_owenertelephone"
-                    android:layout_width="250dp"
+                    android:id="@+id/ed_color"
+                    android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="2dp"
-                    android:layout_toRightOf="@+id/t_type2"
+                    android:layout_toLeftOf="@+id/imqxqycolor"
+                    android:layout_toRightOf="@+id/txcolor"
                     android:background="@null"
-                    android:inputType="phone"
-                    android:maxLines="1"
-                    android:hint="请输入联系人电话"
+                    android:editable="false"
+                    android:hint="请点击选择车辆颜色"
                     android:paddingLeft="10dp"
                     android:textColor="#666"
                     android:textColorHint="#999"
@@ -306,39 +260,43 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1px"
-                    android:layout_below="@+id/ed_owenertelephone"
+                    android:layout_below="@+id/ed_color"
                     android:layout_marginTop="5dp"
                     android:background="@color/line"></View>
 
-
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/imqxqycolor"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more2" />
             </RelativeLayout>
-
-
-
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/tmz"
+                    android:id="@+id/txsyxz"
                     style="@style/MyTextView14"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:text="联系人职务:"
+                    android:text="使用性质:"
                     android:textColor="#333" />
 
                 <EditText
-                    android:id="@+id/ed_zhiwu"
-                    android:layout_width="250dp"
+                    android:id="@+id/ed_syxz"
+                    android:layout_width="match_parent"
                     android:layout_height="35dp"
+                    android:layout_toLeftOf="@+id/imqxqys"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="2dp"
-                    android:layout_toRightOf="@+id/tmz"
+                    android:layout_toRightOf="@+id/txsyxz"
                     android:background="@null"
-                    android:hint="请输入联系人职务"
-                    android:maxLines="1"
+                    android:hint="请点击选择车辆使用性质"
                     android:paddingLeft="10dp"
+                    android:editable="false"
                     android:textColor="#666"
                     android:textColorHint="#999"
                     android:textSize="14sp" />
@@ -346,40 +304,44 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1px"
-                    android:layout_below="@+id/ed_zhiwu"
+                    android:layout_below="@+id/ed_syxz"
                     android:layout_marginTop="5dp"
                     android:background="@color/line"></View>
 
-
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/imqxqys"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more2" />
             </RelativeLayout>
-
-
-
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/t_ds"
+                    android:id="@+id/txzkdj"
                     style="@style/MyTextView14"
-                    android:layout_marginTop="10dp"
+                    android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:text="组织描述:"
+                    android:text="初次登记日期:"
                     android:textColor="#333" />
 
                 <EditText
-                    android:id="@+id/ed_describe"
-                    android:layout_width="260dp"
-                    android:layout_height="100dp"
-                    android:layout_marginTop="10dp"
-
-                    android:layout_marginLeft="10dp"
-                    android:layout_toRightOf="@+id/t_ds"
-                    android:background="@drawable/aw4"
-                    android:hint="请输入组织简单描述"
-                    android:padding="10dp"
-                    android:gravity="top"
+                    android:id="@+id/ed_zjdjdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_toLeftOf="@+id/imqxqy3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/txzkdj"
+                    android:background="@null"
+                    android:hint="请点击选择初次登记日期"
+                    android:paddingLeft="10dp"
+                    android:editable="false"
                     android:textColor="#666"
                     android:textColorHint="#999"
                     android:textSize="14sp" />
@@ -387,12 +349,20 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1px"
-                    android:layout_below="@+id/ed_describe"
+                    android:layout_below="@+id/ed_zjdjdate"
                     android:layout_marginTop="5dp"
                     android:background="@color/line"></View>
 
-
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/imqxqy3"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more2" />
             </RelativeLayout>
+
 
 
             <Button

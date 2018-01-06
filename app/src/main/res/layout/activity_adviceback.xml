@@ -15,6 +15,39 @@
         ></com.shibei.zb.zhongbacomplex.View.TopBar>
 
     <RelativeLayout
+        android:id="@+id/rl_clbj"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/qqwihte">
+
+        <ImageView
+            android:id="@+id/imdwxz"
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/more2" />
+
+        <TextView
+            android:id="@+id/tx_taskjindu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="业务逻辑问题"
+            android:textColor="#444"
+            android:textSize="14sp"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="@drawable/qqwihte"
@@ -30,7 +63,7 @@
             android:id="@+id/ed_content"
             android:textSize="14sp"
             android:gravity="start"
-            android:hint="请输入对本软件的意见~"
+            android:hint="请输入意见~"
             android:textColorHint="#666"
 
             />

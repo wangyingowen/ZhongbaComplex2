@@ -25,7 +25,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NewAppTheme">
-        <activity android:name=".UI.LoadingActivity">
+        <activity android:name=".UI.LoadingActivity"
+            android:priority="1000"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -71,6 +73,15 @@
         <activity android:name=".UI.PersonCarListInfoActivity" />
         <activity android:name=".UI.SeachCompanyActivity" />
         <activity android:name=".UI.SeachOrganazitionActivity" />
+        <activity android:name=".UI.SeachHouseActivity" />
+        <activity android:name=".UI.AddCarForPeopleActivity" />
+        <activity android:name=".UI.PersonHouseListInfoActivity" />
+        <activity android:name=".UI.MyWorkTongjiActivity" />
+        <activity android:name=".UI.EventListForMeActivity" />
+        <activity android:name=".UI.EventTOSPActivity" />
+        <activity android:name=".UI.PatrolListActivity" />
+        <activity android:name=".UI.PatrolAddActivity" />
+        <activity android:name=".UI.PatrolLookActivity" />
 
         <service android:name=".Service.LocationService"></service>
     </application>

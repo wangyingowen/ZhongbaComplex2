@@ -17,15 +17,40 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/blue"
+                >
+
+                <com.shibei.zb.zhongbacomplex.View.RoundImageView
+                    android:id="@+id/im_headicon2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="#FFF"
+                    android:textSize="16sp"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:background="@color/blue">
 
 
                 <com.shibei.zb.zhongbacomplex.View.RoundAngleImageView
-                    android:id="@+id/im_headicon2"
+                    android:id="@+id/im_headicon3"
                     android:layout_width="55dp"
                     android:layout_height="55dp"
                     android:layout_marginLeft="15dp"
@@ -38,7 +63,7 @@
                     style="@style/MyTextView16"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="20dp"
-                    android:layout_toRightOf="@+id/im_headicon2"
+                    android:layout_toRightOf="@+id/im_headicon3"
                     android:text="@string/username"
                     android:textColor="#fff" />
 
@@ -49,7 +74,7 @@
                     android:layout_below="@+id/tx_username"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
-                    android:layout_toRightOf="@+id/im_headicon2"
+                    android:layout_toRightOf="@+id/im_headicon3"
                     android:text="@string/home_rybh"
                     android:textColor="#fff" />
 
@@ -69,7 +94,7 @@
                     style="@style/MyTextView14"
                     android:layout_below="@+id/tx_rybh"
                     android:layout_marginLeft="10dp"
-                    android:layout_toRightOf="@+id/im_headicon2"
+                    android:layout_toRightOf="@+id/im_headicon3"
                     android:text="@string/home_bmmc"
                     android:textColor="#fff" />
 
@@ -184,12 +209,52 @@
                         android:textColor="#FFF"
                         android:textSize="10sp" />
                 </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_sjcj"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/aw4">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/im713"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/shijiancaiji"
+
+                                />
+
+                            <TextView
+                                style="@style/MyTextView14"
+                                android:layout_below="@+id/im713"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:text="事件采集"
+                                android:textColor="#666" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="70dp"
                     android:layout_weight="1"
-                    android:visibility="gone"
+                    android:visibility="visible"
 
                     >
 
@@ -210,7 +275,7 @@
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_centerHorizontal="true"
-                                android:background="@drawable/shijiancaiji"
+                                android:background="@mipmap/xunluoche"
 
                                 />
 
@@ -219,13 +284,26 @@
                                 android:layout_below="@+id/im223"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="2dp"
-                                android:text="@string/home_sjcj"
+                                android:text="巡逻巡查"
                                 android:textColor="#666" />
                         </RelativeLayout>
 
                     </RelativeLayout>
 
                 </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
 
                 <RelativeLayout
                     android:layout_width="0dp"
@@ -309,17 +387,6 @@
 
                 </RelativeLayout>
 
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:weightSum="3">
-
-
             </LinearLayout>
 
             <RelativeLayout
@@ -332,7 +399,7 @@
                     style="@style/MyTextView16"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:text="@string/home_zygn"
+                    android:text="@string/home_jcxxgl"
                     android:textColor="#333"
                     android:textStyle="bold"
 
@@ -561,46 +628,6 @@
 
                 </RelativeLayout>
 
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="70dp"
-                    android:layout_weight="1"
-
-                    >
-
-                    <RelativeLayout
-                        android:id="@+id/rl_sjcj"
-                        android:layout_width="80dp"
-                        android:layout_height="70dp"
-                        android:layout_centerInParent="true"
-                        android:background="@drawable/aw4">
-
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true">
-
-                            <ImageView
-                                android:id="@+id/im713"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_centerHorizontal="true"
-                                android:background="@drawable/shijiancaiji"
-
-                                />
-
-                            <TextView
-                                style="@style/MyTextView14"
-                                android:layout_below="@+id/im713"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="2dp"
-                                android:text="事件采集"
-                                android:textColor="#666" />
-                        </RelativeLayout>
-
-                    </RelativeLayout>
-
-                </RelativeLayout>
 
 
             </LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.shibei.zb.zhongbacomplex.View.RoundAngleImageView
+            android:id="@+id/im_headicon"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/img_defaultother"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tx_uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_headicon"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="10dp"
+            android:text="所有人:Owen"
+            android:textColor="#444"
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tx_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/im_headicon"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="联系电话:188888888"
+            android:textColor="#444"
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tx_xzqy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_uname"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="10dp"
+            android:text="行政区域:西藏拉萨"
+            android:textColor="#444"
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tx_mj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_xzqy"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="10dp"
+            android:text="面积:151"
+            android:textColor="#444"
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tx_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tx_uname"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="房屋类型:民房"
+            android:textColor="#444"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tx_gmsj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tx_type"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="购买/修建时间:2017-12-11"
+            android:textColor="#444"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tx_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_mj"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="地址:鼎折覆餗东方闪电发第三方士大夫的说法"
+            android:textColor="#444"
+            android:textSize="14sp"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tx_address"
+            android:layout_marginTop="10dp"
+            android:background="@color/line"></View>
+    </RelativeLayout>
+</LinearLayout>

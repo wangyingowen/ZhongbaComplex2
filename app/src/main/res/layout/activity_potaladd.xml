@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.shibei.zb.zhongbacomplex.View.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:centerText="巡逻巡查上报"></com.shibei.zb.zhongbacomplex.View.TopBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/v_root"
+            >
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tclbm"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="发生时间:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_eventclbm"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/tclbm"
+                    android:background="@null"
+                    android:editable="false"
+                    android:hint="点击选择事件发生时间"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/ed_eventclbm"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/line"></View>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/immore1"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more2" />
+            </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/MyTextView12"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#d81e06"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/t31"
+            style="@style/MyTextView14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="事件地址:"
+            android:textColor="#333" />
+
+        <EditText
+            android:id="@+id/ed_eventaddress"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/t31"
+            android:background="@null"
+            android:hint="请输入详细地址"
+
+            android:paddingLeft="10dp"
+            android:textColor="#666"
+            android:textColorHint="#999"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/ed_eventaddress"
+            android:layout_marginTop="5dp"
+            android:background="@color/line"></View>
+
+    </RelativeLayout>
+
+
+
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/aw4"
+      >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:gravity="top"
+            android:id="@+id/ed_bz"
+            android:hint="请输入事件详细内容.."
+            android:textColor="#444"
+            android:textColorHint="#999"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+            <TextView
+                android:visibility="visible"
+                style="@style/MyTextView14"
+                android:layout_marginLeft="15dp"
+                android:text="点击下方图标上传图片:"
+                android:textColor="#444444" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:visibility="visible"
+                    android:id="@+id/iv_pic1"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/add_pic" />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:visibility="invisible"
+                    android:id="@+id/iv_pic2"
+
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/add_pic" />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:visibility="invisible"
+                    android:id="@+id/iv_pic3"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/add_pic" />
+
+            </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btn_comit"
+        android:background="@drawable/qqlv"
+        android:text="确认提交"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="1px"
+        android:layout_marginTop="15dp"></View>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

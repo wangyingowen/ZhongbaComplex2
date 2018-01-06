@@ -42,7 +42,7 @@
             <TextView
                style="@style/MyTextView14"
                 android:textColor="#ccc"
-                android:text="暂无数据车辆信息~"
+                android:text="暂无该数据~"
                 android:id="@+id/tx_nodata"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/imnodata"

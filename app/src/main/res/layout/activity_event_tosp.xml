@@ -10,10 +10,26 @@
         android:id="@+id/topbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:centerText="事件采集"></com.shibei.zb.zhongbacomplex.View.TopBar>
+        app:centerText="事件详情"></com.shibei.zb.zhongbacomplex.View.TopBar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:text="审批"
+        android:id="@+id/btn_spp"
+        android:layout_alignParentBottom="true"
+        android:textSize="14sp"
+        android:textColor="#FFF"
+        android:background="@drawable/qqlv"
+        />
 
     <ScrollView
         android:layout_width="match_parent"
+        android:layout_above="@+id/btn_spp"
         android:layout_height="match_parent">
 
         <LinearLayout
@@ -55,6 +71,7 @@
             android:background="@null"
             android:hint="请输入事件名称"
             android:paddingLeft="10dp"
+            android:enabled="false"
             android:textColor="#666"
             android:textColorHint="#999"
             android:textSize="14sp" />
@@ -90,6 +107,7 @@
             android:editable="false"
             android:hint="点击选择事件类型"
             android:paddingLeft="10dp"
+            android:enabled="false"
             android:textColor="#666"
             android:textColorHint="#999"
             android:textSize="14sp"
@@ -106,6 +124,7 @@
             android:layout_width="15dp"
             android:layout_height="10dp"
             android:layout_alignParentRight="true"
+            android:visibility="invisible"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
             android:background="@drawable/more2" />
@@ -131,6 +150,7 @@
                     android:layout_toRightOf="@+id/t41"
                     android:background="@null"
                     android:hint="点击选择事件等级"
+                    android:enabled="false"
                     android:paddingLeft="10dp"
                     android:editable="false"
                     android:textColor="#666"
@@ -149,6 +169,7 @@
                     android:layout_height="10dp"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
+                    android:visibility="invisible"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/more2" />
             </RelativeLayout>
@@ -173,6 +194,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="2dp"
                     android:layout_toRightOf="@+id/tclbm"
+                    android:enabled="false"
                     android:background="@null"
                     android:editable="false"
                     android:hint="点击选择事件发生时间"
@@ -193,6 +215,7 @@
                     android:layout_height="10dp"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
+                    android:visibility="invisible"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/more2" />
             </RelativeLayout>
@@ -224,7 +247,7 @@
             android:layout_toRightOf="@+id/t31"
             android:background="@null"
             android:hint="请输入详细地址"
-
+android:enabled="false"
             android:paddingLeft="10dp"
             android:textColor="#666"
             android:textColorHint="#999"
@@ -300,6 +323,7 @@
             android:background="@null"
             android:hint="请选择审批人"
             android:paddingLeft="10dp"
+            android:enabled="false"
             android:textColor="#666"
             android:textColorHint="#999"
             android:textSize="14sp" />
@@ -317,6 +341,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
+            android:visibility="invisible"
             android:background="@drawable/more2" />
     </RelativeLayout>
 
@@ -341,7 +366,7 @@
             android:layout_toRightOf="@+id/tssxz"
             android:background="@null"
             android:hint="点击选择行政区域"
-            android:text="西藏自治区仲巴县"
+            android:enabled="false"
             android:editable="false"
             android:paddingLeft="10dp"
             android:textColor="#666"
@@ -360,6 +385,7 @@
             android:layout_height="10dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:visibility="invisible"
             android:layout_marginRight="10dp"
             android:background="@drawable/more2" />
     </RelativeLayout>
@@ -385,6 +411,7 @@
                     android:layout_height="35dp"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="2dp"
+                    android:enabled="false"
                     android:layout_toRightOf="@+id/tclsx"
                     android:background="@null"
                     android:hint="点击选择处理时限"
@@ -407,69 +434,71 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
+                    android:visibility="invisible"
                     android:background="@drawable/more2" />
             </RelativeLayout>
 
             <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:background="@drawable/aw4"
       >
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@null"
             android:gravity="top"
             android:id="@+id/ed_bz"
             android:hint="请输入事件详细内容.."
+            android:enabled="false"
             android:textColor="#444"
             android:textColorHint="#999"
             android:textSize="14sp" />
     </RelativeLayout>
 
-            <TextView
-                android:visibility="visible"
-                style="@style/MyTextView14"
-                android:layout_marginLeft="15dp"
-                android:text="点击下方图标上传图片:"
-                android:textColor="#444444" />
+    <TextView
+        android:visibility="gone"
+        style="@style/MyTextView14"
+        android:layout_marginLeft="15dp"
+        android:text="图片:"
+        android:textColor="#444444" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 >
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:layout_marginLeft="15dp"
-                    android:visibility="visible"
+                    android:visibility="invisible"
                     android:id="@+id/iv_pic1"
                     android:scaleType="centerCrop"
                     android:layout_marginTop="10dp"
-                    android:src="@mipmap/add_pic" />
+
+                    android:src="@mipmap/img_defaultother" />
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:layout_marginLeft="30dp"
                     android:visibility="invisible"
                     android:id="@+id/iv_pic2"
 
                     android:layout_marginTop="10dp"
-                    android:src="@mipmap/add_pic" />
+                    android:src="@mipmap/img_defaultother" />
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:layout_marginLeft="30dp"
                     android:visibility="invisible"
                     android:id="@+id/iv_pic3"
                     android:scaleType="centerCrop"
                     android:layout_marginTop="10dp"
-                    android:src="@mipmap/add_pic" />
+                    android:src="@mipmap/img_defaultother" />
 
             </LinearLayout>
 
@@ -480,6 +509,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="15dp"
+        android:visibility="gone"
         android:id="@+id/btn_comit"
         android:background="@drawable/qqlv"
         android:text="确认提交"
@@ -492,4 +522,5 @@
         android:layout_marginTop="15dp"></View>
         </LinearLayout>
     </ScrollView>
+    </RelativeLayout>
 </LinearLayout>
