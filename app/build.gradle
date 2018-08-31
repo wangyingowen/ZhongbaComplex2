@@ -20,6 +20,7 @@ android {
 }
 dependencies {
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.0-beta1'
+    implementation files('libs/pinyin4j-2.5.0.jar')
 }
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')

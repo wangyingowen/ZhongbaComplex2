@@ -47,7 +47,7 @@
                     android:layout_toRightOf="@+id/tclbm"
                     android:background="@null"
                     android:editable="false"
-                    android:hint="点击选择事件发生时间"
+                    android:hint="点击选择发生时间"
                     android:paddingLeft="10dp"
                     android:textColor="#666"
                     android:textColorHint="#999"
@@ -85,7 +85,7 @@
             style="@style/MyTextView14"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
-            android:text="事件地址:"
+            android:text="地址:"
             android:textColor="#333" />
 
         <EditText
@@ -128,7 +128,7 @@
             android:background="@null"
             android:gravity="top"
             android:id="@+id/ed_bz"
-            android:hint="请输入事件详细内容.."
+            android:hint="请输入详细内容.."
             android:textColor="#444"
             android:textColorHint="#999"
             android:textSize="14sp" />
@@ -159,6 +159,7 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
+                    android:scaleType="centerCrop"
                     android:layout_marginLeft="30dp"
                     android:visibility="invisible"
                     android:id="@+id/iv_pic2"

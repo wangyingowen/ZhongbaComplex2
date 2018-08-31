@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.shibei.zb.zhongbacomplex.View.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:centerText="巡逻巡查详情"></com.shibei.zb.zhongbacomplex.View.TopBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/v_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tclbm"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="发生时间:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_eventclbm"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/tclbm"
+                    android:background="@null"
+                    android:editable="false"
+                    android:hint="点击选择发生时间"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/t31"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="地址:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_eventaddress"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/t31"
+                    android:background="@null"
+                    android:hint="请输入详细地址"
+
+                    android:paddingLeft="10dp"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/ttt"
+                    style="@style/MyTextView14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="备注:"
+                    android:textColor="#333" />
+
+                <EditText
+                    android:id="@+id/ed_bz"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/ttt"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:textColor="#666"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_zxgc"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="#f2f2f2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="附件:"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_pic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/img_defaultother"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_pic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+
+                    android:src="@mipmap/add_pic"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_pic3"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/add_pic"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="1px"
+                android:layout_marginTop="15dp"></View>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

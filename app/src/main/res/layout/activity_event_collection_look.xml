@@ -17,145 +17,49 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/v_root"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:id="@+id/v_root"
-            >
+            android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        >
-
-        <TextView
-            style="@style/MyTextView12"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:textColor="#d81e06"
-            android:visibility="gone" />
-
-        <TextView
-            android:id="@+id/t21"
-            style="@style/MyTextView14"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="15dp"
-            android:text="事件名称:"
-            android:textColor="#333" />
-
-        <EditText
-            android:id="@+id/ed_eventname"
-            android:layout_width="250dp"
-            android:layout_height="35dp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="2dp"
-            android:layout_toRightOf="@+id/t21"
-            android:background="@null"
-            android:hint="请输入事件名称"
-            android:paddingLeft="10dp"
-            android:enabled="false"
-            android:textColor="#666"
-            android:textColorHint="#999"
-            android:textSize="14sp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_below="@+id/ed_eventname"
-            android:layout_marginTop="5dp"
-            android:background="@color/line"></View>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/t411"
-            style="@style/MyTextView14"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="15dp"
-            android:text="事件类型:"
-            android:textColor="#333" />
-
-        <EditText
-            android:id="@+id/ed_eventtype"
-            android:layout_width="250dp"
-            android:layout_height="35dp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="2dp"
-            android:layout_toRightOf="@+id/t411"
-            android:background="@null"
-            android:editable="false"
-            android:hint="点击选择事件类型"
-            android:paddingLeft="10dp"
-            android:enabled="false"
-            android:textColor="#666"
-            android:textColorHint="#999"
-            android:textSize="14sp"
-            tools:ignore="Deprecated" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_below="@+id/ed_eventtype"
-            android:layout_marginTop="5dp"
-            android:background="@color/line"></View>
-
-        <ImageView
-            android:layout_width="15dp"
-            android:layout_height="10dp"
-            android:layout_alignParentRight="true"
-            android:visibility="invisible"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/more2" />
-    </RelativeLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+
 
                 <TextView
-                    android:id="@+id/t41"
-                    style="@style/MyTextView14"
+                    android:id="@+id/tx_enventname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="事件名称"
+                    android:textColor="#000"
+                    android:textColorHint="#999"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:background="#f2f2f2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:text="事件等级:"
-                    android:textColor="#333" />
-
-                <EditText
-                    android:id="@+id/ed_eventlevel"
-                    android:layout_width="250dp"
-                    android:layout_height="35dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="2dp"
-                    android:layout_toRightOf="@+id/t41"
-                    android:background="@null"
-                    android:hint="点击选择事件等级"
-                    android:enabled="false"
-                    android:paddingLeft="10dp"
-                    android:editable="false"
-                    android:textColor="#666"
-                    android:textColorHint="#999"
-                    android:textSize="14sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_below="@+id/ed_eventlevel"
-                    android:layout_marginTop="5dp"
-                    android:background="@color/line"></View>
-
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="10dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:visibility="invisible"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/more2" />
+                    android:text="基础信息:"
+                    android:textSize="12sp" />
             </RelativeLayout>
 
 
@@ -163,347 +67,167 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tclbm"
-                    style="@style/MyTextView14"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:text="发生时间:"
-                    android:textColor="#333" />
 
-                <EditText
-                    android:id="@+id/ed_eventclbm"
-                    android:layout_width="250dp"
-                    android:layout_height="35dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="2dp"
-                    android:layout_toRightOf="@+id/tclbm"
-                    android:enabled="false"
-                    android:background="@null"
-                    android:editable="false"
-                    android:hint="点击选择事件发生时间"
-                    android:paddingLeft="10dp"
-                    android:textColor="#666"
-                    android:textColorHint="#999"
-                    android:textSize="14sp" />
-
-                <View
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_below="@+id/ed_eventclbm"
-                    android:layout_marginTop="5dp"
-                    android:background="@color/line"></View>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
 
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="10dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:visibility="invisible"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/more2" />
+                    <TextView
+                        android:id="@+id/tx_sjlx"
+                        style="@style/MyTextView14"
+                        android:layout_marginLeft="15dp"
+                        android:text="事件类型:"
+                        android:textColor="#333" />
+
+                    <TextView
+                        android:id="@+id/tx_sjdj"
+                        style="@style/MyTextView14"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:text="事件等级:"
+                        android:textColor="#333" />
+
+
+                    <TextView
+                        android:id="@+id/tx_sjtime"
+                        style="@style/MyTextView14"
+                        android:layout_below="@+id/tx_sjlx"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="发生时间:"
+                        android:textColor="#333" />
+
+                    <TextView
+                        android:id="@+id/tx_xzqy"
+                        style="@style/MyTextView14"
+                        android:layout_below="@+id/tx_sjadress"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="行政区域:"
+                        android:textColor="#333" />
+
+                    <TextView
+                        android:id="@+id/tx_sjadress"
+                        style="@style/MyTextView14"
+                        android:layout_below="@+id/tx_sjtime"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="事件地址:"
+                        android:textColor="#333" />
+
+                    <TextView
+                        android:id="@+id/tx_clsx"
+                        style="@style/MyTextView14"
+                        android:layout_below="@+id/tx_spren"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="处理时限:"
+                        android:textColor="#333" />
+
+                    <TextView
+                        android:id="@+id/tx_spren"
+                        style="@style/MyTextView14"
+                        android:layout_below="@+id/tx_xzqy"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="审批人:"
+                        android:textColor="#333" />
+                </RelativeLayout>
             </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            style="@style/MyTextView12"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:textColor="#d81e06"
-            android:visibility="gone" />
-
-        <TextView
-            android:id="@+id/t31"
-            style="@style/MyTextView14"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="15dp"
-            android:text="事件地址:"
-            android:textColor="#333" />
-
-        <EditText
-            android:id="@+id/ed_eventaddress"
-            android:layout_width="250dp"
-            android:layout_height="35dp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="2dp"
-            android:layout_toRightOf="@+id/t31"
-            android:background="@null"
-            android:hint="请输入详细地址"
-android:enabled="false"
-            android:paddingLeft="10dp"
-            android:textColor="#666"
-            android:textColorHint="#999"
-            android:textSize="14sp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_below="@+id/ed_eventaddress"
-            android:layout_marginTop="5dp"
-            android:background="@color/line"></View>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:visibility="gone"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/tsjzb"
-            style="@style/MyTextView14"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="15dp"
-            android:text="事件坐标:"
-            android:textColor="#333" />
-
-        <EditText
-            android:id="@+id/ed_sjzuobiao"
-            android:layout_width="250dp"
-            android:layout_height="35dp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="2dp"
-            android:layout_toRightOf="@+id/tsjzb"
-            android:background="@null"
-            android:editable="false"
-            android:hint="点击获取坐标"
-            android:paddingLeft="10dp"
-            android:textColor="#666"
-            android:textColorHint="#999"
-            android:textSize="14sp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_below="@+id/ed_sjzuobiao"
-            android:layout_marginTop="5dp"
-            android:background="@color/line"></View>
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/tspren"
-            style="@style/MyTextView14"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="15dp"
-            android:text="    审批人:"
-            android:textColor="#333" />
-
-        <EditText
-            android:id="@+id/ed_shengpiren"
-            android:layout_width="250dp"
-            android:layout_height="35dp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="2dp"
-            android:editable="false"
-            android:layout_toRightOf="@+id/tspren"
-            android:background="@null"
-            android:hint="请选择审批人"
-            android:paddingLeft="10dp"
-            android:enabled="false"
-            android:textColor="#666"
-            android:textColorHint="#999"
-            android:textSize="14sp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_below="@+id/ed_shengpiren"
-            android:layout_marginTop="5dp"
-            android:background="@color/line"></View>
-
-        <ImageView
-            android:layout_width="15dp"
-            android:layout_height="10dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="10dp"
-            android:visibility="invisible"
-            android:background="@drawable/more2" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/tssxz"
-            style="@style/MyTextView14"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="15dp"
-            android:text="行政区域:"
-            android:textColor="#333" />
-
-        <EditText
-            android:id="@+id/ed_ssxz"
-            android:layout_width="250dp"
-            android:layout_height="35dp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="2dp"
-            android:layout_toRightOf="@+id/tssxz"
-            android:background="@null"
-            android:hint="点击选择行政区域"
-            android:enabled="false"
-            android:editable="false"
-            android:paddingLeft="10dp"
-            android:textColor="#666"
-            android:textColorHint="#999"
-            android:textSize="14sp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_below="@+id/ed_ssxz"
-            android:layout_marginTop="5dp"
-            android:background="@color/line"></View>
-
-        <ImageView
-            android:layout_width="15dp"
-            android:layout_height="10dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:visibility="invisible"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/more2" />
-    </RelativeLayout>
-
-
-
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="#f2f2f2">
 
                 <TextView
-                    android:id="@+id/tclsx"
-                    style="@style/MyTextView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:text="处理时限:"
-                    android:textColor="#333" />
-
-                <EditText
-                    android:id="@+id/ed_eventclsx"
-                    android:layout_width="250dp"
-                    android:layout_height="35dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="2dp"
-                    android:enabled="false"
-                    android:layout_toRightOf="@+id/tclsx"
-                    android:background="@null"
-                    android:hint="点击选择处理时限"
-                    android:editable="false"
-                    android:paddingLeft="10dp"
-                    android:textColor="#666"
-                    android:textColorHint="#999"
-                    android:textSize="14sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_below="@+id/ed_eventclsx"
-                    android:layout_marginTop="5dp"
-                    android:background="@color/line"></View>
-
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="10dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="10dp"
-                    android:visibility="invisible"
-                    android:background="@drawable/more2" />
+                    android:text="事件描述:"
+                    android:textSize="12sp" />
             </RelativeLayout>
 
+
+            <EditText
+                android:id="@+id/ed_bz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:enabled="false"
+                android:gravity="top"
+                android:hint="请输入事件详细内容.."
+                android:textColor="#444"
+                android:textColorHint="#999"
+                android:textSize="14sp" />
+
+
             <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:background="@drawable/aw4"
-      >
+                android:id="@+id/rl_pic"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="#f2f2f2">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@null"
-            android:gravity="top"
-            android:id="@+id/ed_bz"
-            android:hint="请输入事件详细内容.."
-            android:enabled="false"
-            android:textColor="#444"
-            android:textColorHint="#999"
-            android:textSize="14sp" />
-    </RelativeLayout>
-
-    <TextView
-        android:visibility="gone"
-        style="@style/MyTextView14"
-        android:layout_marginLeft="15dp"
-        android:text="图片:"
-        android:textColor="#444444" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="图片文件:"
+                    android:textSize="12sp" />
+            </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
+                android:orientation="vertical">
+
                 <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="15dp"
-                    android:visibility="invisible"
                     android:id="@+id/iv_pic1"
-                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/img_defaultother"
 
-                    android:src="@mipmap/img_defaultother" />
+                    android:visibility="gone" />
+
                 <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="30dp"
-                    android:visibility="invisible"
                     android:id="@+id/iv_pic2"
-
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
                     android:layout_marginTop="10dp"
-                    android:src="@mipmap/img_defaultother" />
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="30dp"
-                    android:visibility="invisible"
-                    android:id="@+id/iv_pic3"
                     android:scaleType="centerCrop"
+                    android:src="@mipmap/img_defaultother"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_pic3"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="15dp"
                     android:layout_marginTop="10dp"
-                    android:src="@mipmap/img_defaultother" />
+                    android:layout_marginRight="15dp"
+
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/img_defaultother"
+                    android:visibility="gone" />
 
             </LinearLayout>
+<View
+    android:layout_width="wrap_content"
+    android:layout_height="10dp"></View>
 
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="15dp"
-        android:visibility="gone"
-        android:id="@+id/btn_comit"
-        android:background="@drawable/qqlv"
-        android:text="确认提交"
-        android:textColor="#FFFFFF"
-        android:textSize="14sp" />
-
-    <View
-        android:layout_width="1px"
-        android:layout_height="1px"
-        android:layout_marginTop="15dp"></View>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

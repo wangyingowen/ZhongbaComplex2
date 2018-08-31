@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:id="@+id/root"
+    android:orientation="vertical">
+
+    <com.shibei.zb.zhongbacomplex.View.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:centerText="处理记录详情"></com.shibei.zb.zhongbacomplex.View.TopBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="记录人："
+                    android:id="@+id/tt123"
+                    android:textColor="#333"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/tx_jlr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/tt123"
+                    android:layout_marginLeft="10dp"
+                    android:text="张萌萌"
+                    android:textColor="#444"
+                    android:textSize="14sp"
+
+                    />
+            </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="任务进度："
+            android:id="@+id/tt1"
+            android:textColor="#333"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tx_taskjindu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tt1"
+            android:layout_marginLeft="10dp"
+            android:text="执行中"
+            android:textColor="#444"
+            android:textSize="14sp"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="内容："
+            android:id="@+id/tt2"
+            android:textColor="#333"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ed_content"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/tt2"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:focusable="false"
+            android:gravity="top"
+            android:hint=".."
+            android:textColor="#444"
+            android:textColorHint="#ccc"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:id="@+id/rl_back_pic"
+    android:background="#f2f2f2"
+    >
+    <TextView
+        android:visibility="visible"
+        style="@style/MyTextView12"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:text="附件:" />
+
+</RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/im_1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scaleType="centerCrop"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/img_defaultother" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/im_2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/img_defaultother" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/im_3"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/img_defaultother" />
+        </RelativeLayout>
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

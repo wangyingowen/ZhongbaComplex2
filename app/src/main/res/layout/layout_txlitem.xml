@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0E0E0">
+
+        <TextView
+            android:id="@+id/catalog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+android:layout_centerVertical="true"
+            android:text="A"
+            android:textColor="#454545"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_cc"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.shibei.zb.zhongbacomplex.View.RoundAngleImageView
+            android:id="@+id/im_headicon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/defaultheadicon" />
+
+        <TextView
+            android:id="@+id/tx_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/im_headicon"
+            android:text="姓名"
+            android:textColor="#333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tx_bmmc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/im_headicon"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/im_headicon"
+            android:text="部门名称"
+            android:textColor="#666"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#999" />
+    </RelativeLayout>
+</LinearLayout>

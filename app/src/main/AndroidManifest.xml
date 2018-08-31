@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
+    <uses-permission android:name="android.permission.CAMERA"/>
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
@@ -27,6 +27,7 @@
         android:theme="@style/NewAppTheme">
         <activity android:name=".UI.LoadingActivity"
             android:priority="1000"
+            android:screenOrientation="portrait"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,56 +35,185 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UI.MainActivity" />
-        <activity android:name=".UI.LoginActivity" />
-        <activity android:name=".UI.HouseInfoActivity" />
-        <activity android:name=".UI.MessageDetailActvity" />
-        <activity android:name=".UI.WattingForDoActivity" />
-        <activity android:name=".UI.EventCollectionActivity"></activity>
-        <activity android:name=".UI.MyTaskActvity" />
-        <activity android:name=".UI.DateUploadActivity" />
-        <activity android:name=".UI.AddDateUploadActivity" />
-        <activity android:name=".UI.SignActivity" />
-        <activity android:name=".UI.PersonnelManagementActivity" />
-        <activity android:name=".UI.CompanyInfoActivity" />
-        <activity android:name=".UI.HoseInfoListActivity" />
-        <activity android:name=".UI.PersonelMangementListActivity" />
-        <activity android:name=".UI.CompanyListActivity" />
-        <activity android:name=".UI.OrganizationListActivity" />
-        <activity android:name=".UI.TempleListActivity" />
-        <activity android:name=".UI.SeachActivity" />
-        <activity android:name=".UI.OrganizationInfoActivity" />
-        <activity android:name=".UI.PersonnelManagementEditActivity" />
-        <activity android:name=".UI.EventListActivity" />
-        <activity android:name=".UI.AdviceBackActivity" />
-        <activity android:name=".UI.AboutUsActivity" />
-        <activity android:name=".UI.PersonInfoActivity" />
-        <activity android:name=".UI.TaskDetialActivity" />
-        <activity android:name=".UI.AddTaskDoActvity" />
-        <activity android:name=".UI.TaskDoDetial" />
-        <activity android:name=".UI.ImagePagerActivity" />
-        <activity android:name=".UI.JiaYouZhanListActivity" />
-        <activity android:name=".UI.OrganizationInfoEditActivity" />
-        <activity android:name=".UI.SearchSprActivity" />
-        <activity android:name=".UI.EventCollectionLookActivity" />
-        <activity android:name=".UI.CompanyInfoEditActivity" />
-        <activity android:name=".UI.GassStationInfoActivity" />
-        <activity android:name=".UI.GassStationInfoEditActivity" />
-        <activity android:name=".UI.HouseInfoEditActivity" />
-        <activity android:name=".UI.PersonCarListInfoActivity" />
-        <activity android:name=".UI.SeachCompanyActivity" />
-        <activity android:name=".UI.SeachOrganazitionActivity" />
-        <activity android:name=".UI.SeachHouseActivity" />
-        <activity android:name=".UI.AddCarForPeopleActivity" />
-        <activity android:name=".UI.PersonHouseListInfoActivity" />
-        <activity android:name=".UI.MyWorkTongjiActivity" />
-        <activity android:name=".UI.EventListForMeActivity" />
-        <activity android:name=".UI.EventTOSPActivity" />
-        <activity android:name=".UI.PatrolListActivity" />
-        <activity android:name=".UI.PatrolAddActivity" />
-        <activity android:name=".UI.PatrolLookActivity" />
+        <activity android:name=".UI.MainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            />
+        <activity android:name=".UI.LoginActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.HouseInfoActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.MessageDetailActvity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.WattingForDoActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.EventCollectionActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".UI.MyTaskActvity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.DateUploadActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.AddDateUploadActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.SignActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.PersonnelManagementActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.CompanyInfoActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.HoseInfoListActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.PersonelMangementListActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.CompanyListActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.OrganizationListActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.TempleListActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.SeachActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.OrganizationInfoActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.PersonnelManagementEditActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.EventListActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.AdviceBackActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.AboutUsActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.PersonInfoActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.TaskDetialActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.AddTaskDoActvity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.TaskDoDetial"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.ImagePagerActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.JiaYouZhanListActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.OrganizationInfoEditActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.SearchSprActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.EventCollectionLookActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.CompanyInfoEditActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.GassStationInfoActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.GassStationInfoEditActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.HouseInfoEditActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.PersonCarListInfoActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.SeachCompanyActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.SeachOrganazitionActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.SeachHouseActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.AddCarForPeopleActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.PersonHouseListInfoActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.MyWorkTongjiActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.EventListForMeActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.EventTOSPActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.PatrolListActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.PatrolAddActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.PatrolLookActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.EventDetailDolistActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.TaskDetialActivity2"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.TongxunluActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".UI.AddTaskDoActvity2"
+            android:screenOrientation="portrait"
+            />
 
         <service android:name=".Service.LocationService"></service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.shibei.zb.zhongbacomplex"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <receiver android:name="com.shibei.zb.zhongbacomplex.Service.MyRecevier"
+            android:exported="true"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.KEY_EVENT"></action>
+                　　　　　　　　　　
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>

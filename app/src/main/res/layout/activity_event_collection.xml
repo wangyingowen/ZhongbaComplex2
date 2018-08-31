@@ -88,6 +88,7 @@
             android:layout_toRightOf="@+id/t411"
             android:background="@null"
             android:editable="false"
+            android:text="发展问题"
             android:hint="点击选择事件类型"
             android:paddingLeft="10dp"
             android:textColor="#666"
@@ -132,6 +133,7 @@
                     android:background="@null"
                     android:hint="点击选择事件等级"
                     android:paddingLeft="10dp"
+                    android:text="一般"
                     android:editable="false"
                     android:textColor="#666"
                     android:textColorHint="#999"
@@ -458,7 +460,7 @@
                     android:layout_marginLeft="30dp"
                     android:visibility="invisible"
                     android:id="@+id/iv_pic2"
-
+                    android:scaleType="centerCrop"
                     android:layout_marginTop="10dp"
                     android:src="@mipmap/add_pic" />
                 <ImageView
