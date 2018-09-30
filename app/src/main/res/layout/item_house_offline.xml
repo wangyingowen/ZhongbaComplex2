@@ -16,43 +16,45 @@
             android:layout_centerVertical="true"
             android:id="@+id/im_headicon"
             android:layout_marginLeft="10dp"
-            android:src="@mipmap/defaultheadicon"
+            android:background="@mipmap/defaultheadicon"
             />
 
         <TextView
+            android:id="@+id/tx_lxr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:textColor="#444"
-            android:text="姓名"
-            android:layout_toRightOf="@+id/im_headicon"
-            android:id="@+id/tx_name"
+            android:layout_alignTop="@+id/im_headicon"
             android:layout_marginLeft="10dp"
-            android:layout_alignTop="@+id/im_headicon"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:textColor="#444"
-            android:text="性别:男"
-            android:id="@+id/tx_sex"
-            android:layout_marginRight="15dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignTop="@+id/im_headicon"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:textColor="#444"
-            android:text="身份证号:515238888888888"
+            android:layout_marginTop="0dp"
             android:layout_toRightOf="@+id/im_headicon"
-            android:id="@+id/tx_cardnum"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="王嘉胤"
+            android:textColor="#444"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#444"
+            android:text="地址"
+            android:layout_toRightOf="@+id/im_headicon"
+            android:id="@+id/tx_address"
             android:layout_marginLeft="10dp"
             android:layout_alignBottom="@+id/im_headicon"
+            />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/qqlv"
+            android:textColor="#FFF"
+            android:id="@+id/btn_comit"
+            android:text="上传"
+            android:textSize="14sp"
             />
         <View
             android:layout_width="match_parent"

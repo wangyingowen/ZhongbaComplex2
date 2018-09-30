@@ -2,57 +2,55 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#F2f2f2"
     android:layout_height="wrap_content">
     <RelativeLayout
         android:layout_width="match_parent"
         android:id="@+id/rl_content"
-        android:layout_height="80dp">
+        android:layout_height="60dp">
 
-
-        <com.shibei.zb.zhongbacomplex.View.RoundAngleImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_centerVertical="true"
-            android:id="@+id/im_headicon"
-            android:layout_marginLeft="10dp"
-            android:src="@mipmap/defaultheadicon"
-            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:textColor="#444"
-            android:text="姓名"
-            android:layout_toRightOf="@+id/im_headicon"
-            android:id="@+id/tx_name"
+            android:text="四川弘和集团"
+            android:id="@+id/tx_uname"
             android:layout_marginLeft="10dp"
-            android:layout_alignTop="@+id/im_headicon"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#666"
+            android:text="职务:CEO"
+            android:layout_below="@+id/tx_uname"
+          android:layout_marginTop="5dp"
+            android:id="@+id/tx_zhiwu"
+            android:singleLine="true"
+
+            android:layout_marginLeft="10dp"
+
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="12sp"
-            android:textColor="#444"
-            android:text="性别:男"
-            android:id="@+id/tx_sex"
-            android:layout_marginRight="15dp"
+            android:textColor="#666"
+            android:text="加入时间:2008-12-23"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/tx_uname"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tx_jrsj"
+            android:singleLine="true"
             android:layout_alignParentRight="true"
-            android:layout_alignTop="@+id/im_headicon"
-            />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:textColor="#444"
-            android:text="身份证号:515238888888888"
-            android:layout_toRightOf="@+id/im_headicon"
-            android:id="@+id/tx_cardnum"
-            android:layout_marginLeft="10dp"
-            android:layout_alignBottom="@+id/im_headicon"
+
             />
         <View
             android:layout_width="match_parent"

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_content"
+        android:layout_height="60dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:text="关系人:Owen"
+            android:id="@+id/tx_uname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:text="关系:父子关系"
+            android:layout_below="@+id/tx_uname"
+          android:layout_marginTop="5dp"
+            android:id="@+id/tx_gxname"
+            android:singleLine="true"
+
+            android:layout_marginLeft="10dp"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"></View>
+    </RelativeLayout>
+</LinearLayout>

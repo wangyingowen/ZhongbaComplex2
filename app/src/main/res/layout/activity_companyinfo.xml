@@ -10,7 +10,24 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:centerText="单位信息采集"></com.shibei.zb.zhongbacomplex.View.TopBar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl_zb"
+        android:visibility="gone"
+        android:background="	#F0F8FF"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前坐标：1234"
+            android:textSize="14sp"
+            android:textColor="@color/blue"
+            android:id="@+id/tx_currentzb"
+            android:layout_centerInParent="true"
+            />
 
+    </RelativeLayout>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">

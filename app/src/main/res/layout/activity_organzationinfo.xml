@@ -10,7 +10,24 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:centerText="组织信息采集"></com.shibei.zb.zhongbacomplex.View.TopBar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl_zb"
+        android:background="	#F0F8FF"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前坐标：1234"
+            android:textSize="14sp"
+            android:textColor="@color/blue"
+            android:id="@+id/tx_currentzb"
+            android:layout_centerInParent="true"
+            />
 
+    </RelativeLayout>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -260,6 +277,7 @@
                     android:layout_toRightOf="@+id/t_type"
                     android:background="@null"
                     android:maxLines="1"
+                    android:singleLine="true"
                     android:hint="请输入联系人姓名"
                     android:paddingLeft="10dp"
                     android:textColor="#666"
@@ -336,6 +354,7 @@
                     android:layout_marginLeft="2dp"
                     android:layout_toRightOf="@+id/tmz"
                     android:background="@null"
+                    android:singleLine="true"
                     android:hint="请输入联系人职务"
                     android:maxLines="1"
                     android:paddingLeft="10dp"

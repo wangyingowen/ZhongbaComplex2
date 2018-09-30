@@ -445,46 +445,9 @@
 
             </ScrollView>
 
-            <RelativeLayout
-                android:id="@+id/rl_houseinfo"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_above="@+id/rl_carinfo"
-                android:background="@color/blue">
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:background="@color/line"></View>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_alignParentBottom="true"
-                    android:background="@color/line"></View>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:text="房产信息:"
-                    android:textColor="#FFF"
-                    android:textSize="14sp" />
-
-                <ImageView
-                    android:id="@+id/im_houseimg"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="10dp"
-                    android:background="@mipmap/youjiantou" />
-
-            </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/rl_carinfo"
+                android:id="@+id/rl_moreinfo"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_alignParentBottom="true"
@@ -499,7 +462,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:text="机动车信息:"
+                    android:text="更多信息"
                     android:textColor="#FFF"
                     android:textSize="14sp" />
 

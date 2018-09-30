@@ -192,6 +192,20 @@
         <activity android:name=".UI.AddTaskDoActvity2"
             android:screenOrientation="portrait"
             />
+        <activity android:name=".UI.PersonelMangementListOfflineActivity" />
+        <activity android:name=".UI.HouseListOfflineActivity" />
+        <activity android:name=".UI.CompanyListOfflineActivity" />
+        <activity android:name=".UI.OrganationListOfflineActivity" />
+        <activity android:name=".UI.GasstaionListOfflineActivity" />
+        <activity android:name=".UI.EventListOfflineActivity" />
+        <activity android:name=".UI.XunluoListOfflineActivity" />
+        <activity android:name=".UI.MoreInfoPersonActivity" />
+        <activity android:name=".UI.PersonFamilyListActivity" />
+        <activity android:name=".UI.AddFamilyForPeopleActivity" />
+        <activity android:name=".UI.SearchBendiGxrActivity" />
+        <activity android:name=".UI.PersonWorkListActivity" />
+        <activity android:name=".UI.AddWorkforPeopleActivity" />
+        <activity android:name=".UI.SearchBendiCompanyActivity" />
 
         <service android:name=".Service.LocationService"></service>
 

@@ -13,6 +13,65 @@
         app:centerText="人员信息"
         app:rightText="新增"
         ></com.shibei.zb.zhongbacomplex.View.TopBar>
+
+    <RelativeLayout
+        android:id="@+id/rl_lxsj"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/tt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="未上传数据（"
+            android:textColor="#333"
+            android:textSize="15sp"
+
+            />
+        >
+
+        <TextView
+            android:id="@+id/tx_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tt1"
+            android:text=" 2 "
+            android:textColor="#ff0000"
+            android:textSize="15sp"
+
+            />
+        >
+
+        <TextView
+            android:id="@+id/tt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tx_count"
+            android:text="）"
+            android:textColor="#333"
+            android:textSize="15sp"
+
+            />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+
+            android:background="@mipmap/jiantouright"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_alignParentBottom="true"
+            ></View>
+    </RelativeLayout>
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <com.shibei.zb.zhongbacomplex.View.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:centerText="工作关系"
+        app:rightText="提交"></com.shibei.zb.zhongbacomplex.View.TopBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/tsxzqy"
+            style="@style/MyTextView14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="本地企业:"
+            android:textColor="#333" />
+
+        <EditText
+            android:id="@+id/ed_bdgxr"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toLeftOf="@+id/imqxqy"
+            android:layout_toRightOf="@+id/tsxzqy"
+            android:background="@null"
+            android:editable="false"
+            android:hint="请点击查找本地企业"
+            android:paddingLeft="10dp"
+            android:textColor="#666"
+            android:textColorHint="#999"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"></View>
+
+        <ImageView
+            android:id="@+id/imqxqy"
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+
+            android:background="@drawable/more2" />
+
+        <View
+            android:id="@+id/vv"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/rb_bd"
+            android:background="@color/line"></View>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/tsxzqy3"
+            style="@style/MyTextView14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="入职时间:"
+            android:textColor="#333" />
+
+        <EditText
+            android:id="@+id/ed_type"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toLeftOf="@+id/imqxqy3"
+            android:layout_toRightOf="@+id/tsxzqy3"
+            android:background="@null"
+            android:editable="false"
+            android:hint="请点击录入入职时间"
+            android:paddingLeft="10dp"
+            android:textColor="#666"
+            android:textColorHint="#999"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"></View>
+
+        <ImageView
+            android:id="@+id/imqxqy3"
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/more2" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/tsxzqy34"
+            style="@style/MyTextView14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="职        务:"
+            android:textColor="#333" />
+
+        <EditText
+            android:id="@+id/ed_zhiwu"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/tsxzqy34"
+            android:background="@null"
+            android:hint="请输入职务名称"
+            android:paddingLeft="10dp"
+            android:maxLines="1"
+            android:textColor="#666"
+            android:textColorHint="#999"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"></View>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <com.shibei.zb.zhongbacomplex.View.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:centerText="家庭关系"
+        app:rightText="提交"></com.shibei.zb.zhongbacomplex.View.TopBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/tsxzqy"
+            style="@style/MyTextView14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="本地关系人:"
+            android:textColor="#333" />
+
+        <EditText
+            android:id="@+id/ed_bdgxr"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toLeftOf="@+id/imqxqy"
+            android:layout_toRightOf="@+id/tsxzqy"
+            android:background="@null"
+            android:editable="false"
+            android:hint="请点击查找本地联系人"
+            android:paddingLeft="10dp"
+            android:textColor="#666"
+            android:textColorHint="#999"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"></View>
+
+        <ImageView
+            android:id="@+id/imqxqy"
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/vv"
+            android:background="@drawable/more2" />
+
+        <View
+            android:id="@+id/vv"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/rb_bd"
+            android:background="@color/line"></View>
+
+        <RadioButton
+            android:id="@+id/rb_bd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:checked="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/tsxzqy2"
+            style="@style/MyTextView14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="外地关系人:"
+            android:textColor="#333" />
+
+        <EditText
+            android:id="@+id/ed_wdgxr"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toLeftOf="@+id/vv2"
+            android:layout_toRightOf="@+id/tsxzqy2"
+            android:background="@null"
+            android:enabled="false"
+            android:hint="请输入外地关系人姓名"
+            android:paddingLeft="10dp"
+            android:textColor="#666"
+            android:textColorHint="#999"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"></View>
+
+        <View
+            android:id="@+id/vv2"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/rb_wd"
+            android:background="@color/line"></View>
+
+        <RadioButton
+            android:id="@+id/rb_wd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/tsxzqy3"
+            style="@style/MyTextView14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="关系类型:"
+            android:textColor="#333" />
+
+        <EditText
+            android:id="@+id/ed_type"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toLeftOf="@+id/imqxqy3"
+            android:layout_toRightOf="@+id/tsxzqy3"
+            android:background="@null"
+            android:editable="false"
+            android:hint="请点击选择关系类型"
+            android:paddingLeft="10dp"
+            android:textColor="#666"
+            android:textColorHint="#999"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"></View>
+
+        <ImageView
+            android:id="@+id/imqxqy3"
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/more2" />
+    </RelativeLayout>
+
+
+</LinearLayout>
