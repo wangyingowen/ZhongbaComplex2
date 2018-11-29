@@ -9,7 +9,7 @@
         android:layout_height="80dp">
 
 
-        <com.shibei.zb.zhongbacomplex.View.RoundAngleImageView
+        <com.shibei.zb.zhongbacomplex.View.NewYuanjiaoImage
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_centerVertical="true"

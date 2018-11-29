@@ -9,6 +9,7 @@
         android:id="@+id/topbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+
         app:centerText="人口信息采集"></com.shibei.zb.zhongbacomplex.View.TopBar>
 
     <ScrollView
@@ -24,9 +25,19 @@
             <LinearLayout
                 android:id="@+id/ll_addpic"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="160dp"
+                android:background="@mipmap/maobili3"
                 android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF0000"
+                    android:id="@+id/tx_islianjieshebei"
+                    android:layout_gravity="center_horizontal"
+                    android:text="设备连接成功，请将二代身份证靠近感应区."
+                    android:visibility="invisible"
+                    />
 
 
                 <ImageView
@@ -41,18 +52,14 @@
                     style="@style/MyTextView12"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="1dp"
+                    android:textColor="@color/color_wihte"
                     android:text="点击上传个人寸照" />
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="15dp"></View>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
-                android:background="#f2f2f2"></View>
+
+
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -625,7 +632,7 @@
                 <EditText
                     android:id="@+id/ed_address"
                     android:layout_width="250dp"
-                    android:layout_height="35dp"
+                    android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="2dp"
                     android:layout_toRightOf="@+id/t2112"

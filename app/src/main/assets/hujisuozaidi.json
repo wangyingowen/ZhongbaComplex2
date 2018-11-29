@@ -1,0 +1,628 @@
+﻿{
+    "dics": [
+        {
+            "is_default": false,
+            "value": "西藏自治区",
+            "key": "540000",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区拉萨市",
+            "key": "540100",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区拉萨市市辖区",
+            "key": "540101",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区拉萨市城关区",
+            "key": "540102",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区拉萨市区",
+            "key": "540120",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区林周县",
+            "key": "540121",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区当雄县",
+            "key": "540122",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区尼木县",
+            "key": "540123",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区曲水县",
+            "key": "540124",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区堆龙德庆县",
+            "key": "540125",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区达孜县",
+            "key": "540126",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区墨竹工卡县",
+            "key": "540127",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区工布江达县",
+            "key": "540128",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区林芝县",
+            "key": "540129",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区米林县",
+            "key": "540130",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区墨脱县",
+            "key": "540131",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区昌都地区",
+            "key": "542100",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区昌都县",
+            "key": "542121",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区江达县",
+            "key": "542122",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区贡觉县",
+            "key": "542123",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区类乌齐县",
+            "key": "542124",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区丁青县",
+            "key": "542125",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区察雅县",
+            "key": "542126",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区八宿县",
+            "key": "542127",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区左贡县",
+            "key": "542128",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区芒康县",
+            "key": "542129",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区波密县",
+            "key": "542130",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区察隅县",
+            "key": "542131",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区洛隆县",
+            "key": "542132",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区边坝县",
+            "key": "542133",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区盐井县",
+            "key": "542134",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区碧土县",
+            "key": "542135",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区妥坝县",
+            "key": "542136",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区生达县",
+            "key": "542137",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区山南地区",
+            "key": "542200",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区乃东县",
+            "key": "542221",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区扎囊县",
+            "key": "542222",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区贡嘎县",
+            "key": "542223",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区桑日县",
+            "key": "542224",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区琼结县",
+            "key": "542225",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区曲松县",
+            "key": "542226",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区措美县",
+            "key": "542227",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区洛扎县",
+            "key": "542228",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区加查县",
+            "key": "542229",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区郎县",
+            "key": "542230",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区隆子县",
+            "key": "542231",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区错那县",
+            "key": "542232",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区浪卡子县",
+            "key": "542233",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区日喀则地区",
+            "key": "542300",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区日喀则市",
+            "key": "542301",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区日喀则县",
+            "key": "542321",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区南木林县",
+            "key": "542322",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区江孜县",
+            "key": "542323",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区定日县",
+            "key": "542324",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区萨迦县",
+            "key": "542325",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区拉孜县",
+            "key": "542326",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区昂仁县",
+            "key": "542327",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区谢通门县",
+            "key": "542328",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区白朗县",
+            "key": "542329",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区仁布县",
+            "key": "542330",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区康马县",
+            "key": "542331",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区定结县",
+            "key": "542332",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区仲巴县",
+            "key": "542333",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区亚东县",
+            "key": "542334",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区吉隆县",
+            "key": "542335",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区聂拉木县",
+            "key": "542336",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区萨嘎县",
+            "key": "542337",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区岗巴县",
+            "key": "542338",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区那曲地区",
+            "key": "542400",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区那曲县",
+            "key": "542421",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区嘉黎县",
+            "key": "542422",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区比如县",
+            "key": "542423",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区聂荣县",
+            "key": "542424",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区安多县",
+            "key": "542425",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区申扎县",
+            "key": "542426",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区索县",
+            "key": "542427",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区班戈县",
+            "key": "542428",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区巴青县",
+            "key": "542429",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区尼玛县",
+            "key": "542430",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区阿里地区",
+            "key": "542500",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区普兰县",
+            "key": "542521",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区札达县",
+            "key": "542522",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区噶尔县",
+            "key": "542523",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区日土县",
+            "key": "542524",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区革吉县",
+            "key": "542525",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区改则县",
+            "key": "542526",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区措勤县",
+            "key": "542527",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区隆格尔县",
+            "key": "542528",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区林芝地区",
+            "key": "542600",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区林芝县",
+            "key": "542621",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区工布江达县",
+            "key": "542622",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区米林县",
+            "key": "542623",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区墨脱县",
+            "key": "542624",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区波密县",
+            "key": "542625",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区察隅县",
+            "key": "542626",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区朗县",
+            "key": "542627",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区江孜地区",
+            "key": "542700",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区江孜县",
+            "key": "542721",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区浪卡子县",
+            "key": "542722",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区白朗县",
+            "key": "542723",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区仁布县",
+            "key": "542724",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区康马县",
+            "key": "542725",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区亚东县",
+            "key": "542726",
+            "order": 0
+        },
+        {
+            "is_default": false,
+            "value": "西藏自治区岗巴县",
+            "key": "542727",
+            "order": 0
+        }
+    ]
+}

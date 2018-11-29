@@ -43,16 +43,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
 
-                android:background="#f2f2f2"
+                android:background="@mipmap/maobili3"
                 >
 
-                <ImageView
-                    android:id="@+id/rl_gaosi"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"></ImageView>
+
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -60,7 +54,7 @@
                     android:id="@+id/rl_updateheadicon"
                     android:layout_centerInParent="true"
                     >
-                    <com.shibei.zb.zhongbacomplex.View.RoundAngleImageView
+                    <com.shibei.zb.zhongbacomplex.View.NewYuanjiaoImage
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:scaleType="centerCrop"
@@ -72,6 +66,7 @@
                         style="@style/MyTextView12"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="5dp"
+                        android:textColor="@color/color_wihte"
                         android:layout_below="@+id/im_headicon"
                         android:text="点击上传房屋照片" />
 

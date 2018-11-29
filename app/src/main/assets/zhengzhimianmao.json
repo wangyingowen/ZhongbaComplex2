@@ -1,0 +1,13 @@
+{
+	"dics": [{
+		"is_default": false,
+		"value": "无",
+		"key": "01",
+		"order": 0
+	}, {
+		"is_default": false,
+		"value": "共产党员",
+		"key": "02",
+		"order": 0
+	}]
+}

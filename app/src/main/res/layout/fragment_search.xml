@@ -180,4 +180,46 @@
             android:layout_alignParentBottom="true"
             android:background="@color/line"></View>
     </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/rl_shenfenz"
+        >
+
+        <ImageView
+            android:id="@+id/i421"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/shenfenzhegn" />
+
+        <TextView
+            android:id="@+id/t421"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/i421"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/i421"
+            android:text="身份证查询"
+            android:textColor="#444"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t421"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/i421"
+            android:text="校验身份证信息"
+            android:textColor="#999"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"></View>
+    </RelativeLayout>
 </LinearLayout>

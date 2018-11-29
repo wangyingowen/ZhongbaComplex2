@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仲巴综合治理"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="16sp"
+
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温馨提示"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_above="@+id/ttt"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:id="@+id/ttt"
+            android:layout_centerInParent="true"
+            android:text="程序出现了意想不到的的错误，请重启程序！我们已经在后台进行了记录，在后续版本中我们将修复该错误，为您带来的不便敬请谅解，请尽量保证使用过程中网络通畅！"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/qqlv"
+            android:id="@+id/btn_colose"
+            android:layout_below="@+id/ttt"
+            android:layout_marginTop="50dp"
+            android:text="重启程序"
+            android:textColor="#FFF"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

@@ -386,7 +386,46 @@
                     </RelativeLayout>
 
                 </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
 
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_wenjian"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/aw4">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/im63"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@mipmap/wenjianjia"
+
+                                />
+
+                            <TextView
+                                style="@style/MyTextView12"
+                                android:layout_below="@+id/im63"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:text="文件管理"
+                                android:textColor="#666" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
             </LinearLayout>
 
             <RelativeLayout
